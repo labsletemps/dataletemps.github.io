@@ -1776,7 +1776,7 @@ main.container, main.content>.container {
     font-family: Droid serif, "Times New Roman", Times, serif;
     font-size: 4em;
     margin-top: 1em;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #333;
     padding-bottom: 0.6em;
     letter-spacing: 0.04em
 }
@@ -1842,7 +1842,7 @@ main.container, main.content>.container {
     font-family: Droid serif, "Times New Roman", Times, serif;
     font-size: 2.9em;
 
-    color:#222;
+    color:#333;
     padding: 1.5em 0 0.5em;
     letter-spacing: 0.05em
 }
