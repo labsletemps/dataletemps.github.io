@@ -2,22 +2,27 @@
 layout: default
 title: Mainpage
 ---
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 <!-- Content
     ================================================== -->
-  <div class="top-strip"></div>
+   <div class="top-strip"></div>
   <div class="content">
     <main class="container">
     	<div class="row-fluid">
-    		<section class="content">
-    		  <h1>Ipsum List</h1>
-    		</section>
+
+    		<section class="content"><br><br>
+
+    		  <img src="img/log.png"/>
+          <center><span style="font-size:14px"><big>Le making-of des projets multimédia du quotidien suisse Le Temps</big> <br><a href="http://www.github.com/dataletemps">Le code de nos projets</a> | <a href="http://www.github.com/dataletemps">Notre compte Twitter</a> | <a href="http://www.github.com/dataletemps">Notre page Facebook</a> </span></center>
+<hr>
+    		</section><br>
     		<ul class="entries">
     		{% for post in paginator.posts %}
     		  <li>
     		    <a href="{{ post.url }}">
-                      <span>{{ post.date | date: "%d %B %Y" }}</span>
-    		        <h3>{{ post.title }}</h3>
-                      <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
+                      <span >{{ post.date | date: "%d %B %Y" }}</span>
+    		        <h3><big>{{ post.title }}</big></h3>
+                      <div style="color#333">{{ post.content |truncatehtml | truncatewords: 20 }}</div>
     		    </a>
     		  </li>
     		{% endfor %}
