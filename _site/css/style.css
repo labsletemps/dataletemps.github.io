@@ -1787,7 +1787,11 @@ main.container, main.content>.container {
 .entries {
     list-style: none;
     font-family: Droid serif;
-    margin: 2em 0 0
+    margin: 2em 0 0;
+    text-align: left;
+    margin-left:5%;
+
+ 
 }
 .entries li {
     margin-bottom: 3em;
@@ -1800,8 +1804,10 @@ main.container, main.content>.container {
 }
 .entries h3 {
     font-family: Droid serif, "Times New Roman", Times, serif;
-    font-size: 2em;
-    margin-top: 0.2em
+    font-size: 1.4em;
+    margin-top: 0.2em;
+      color:#333;
+      font-weight:140;
 }
 .entries div {
     line-height: 1.7em;
