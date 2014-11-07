@@ -1794,8 +1794,8 @@ main.container, main.content>.container {
  
 }
 .entries li {
-    margin-bottom: 3em;
-    padding-top: 1.5em
+    margin-bottom: 1.5em;
+    padding-top: 0.5em
 }
 .entries span {
     text-transform: uppercase;
@@ -1804,7 +1804,7 @@ main.container, main.content>.container {
 }
 .entries h3 {
     font-family: Droid serif, "Times New Roman", Times, serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 0.2em;
       color:#333;
       font-weight:140;
