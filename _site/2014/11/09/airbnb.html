@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title> Comment nous avons scrapé les données d'Airbnb  - Data Le Temps</title>
+		<title> Comment nous avons enquêté avec les données d'Airbnb  - Data Le Temps</title>
 		<!-- For responsive site
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		-->
@@ -44,11 +44,11 @@
 			</article>
 			<article class="post">
 				<h5>09 November 2014</h5><br>
-				<h2 class="content">Comment nous avons scrapé les données d'Airbnb</h2>
+				<h2 class="content">Comment nous avons enquêté avec les données d'Airbnb</h2>
 				<section>
 					<p><img src="/img/carte.png" alt="carte" />
 <br /><br />
-Dès demain et dès maintenant sur le site web du Temps, vous pourrez lire une enquête de notre journaliste <a href="https://twitter.com/julieconti">Julie Conti</a> sur Airbnb à Genève. L’article s’intéresse au marché de la location à court terme au travers des annonces de cette plate-forme communautaire fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. </p>
+Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste <a href="https://twitter.com/julieconti">Julie Conti</a> sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une bonne dose de datajournalisme. </p>
 
 <hr />
 
@@ -56,23 +56,23 @@ Dès demain et dès maintenant sur le site web du Temps, vous pourrez lire une e
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 <hr />
 
-<p>Tout est partie d’un questionnement. </p>
+<h3 id="du-journalisme-de-donnes">Du journalisme de données</h3>
 
-<blockquote>
-  <p>Dans de nombreuses grandes villes -  Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site “cool” de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ? </p>
-</blockquote>
+<p>Tout est parti d’une question. </p>
 
-<h3 id="une-enqute-avec-les-data">Une enquête avec les data</h3>
+<p>Dans de nombreuses grandes villes -  Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site “cool” de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ? </p>
 
-<p>Pour répondre à ces questions, nous aurions pu, en surfant sur le site, en lisant les commentaires, aller récupérer des informations et des témoignages au cas par cas et enrichir tout ça d’avis d’experts.</p>
+<p>Pour répondre à ces questions, nous aurions pu, en surfant sur le site, en lisant les commentaires, aller récupérer des informations et des témoignages au cas par cas.</p>
 
-<p>**Nous avons essayé de travailler différemment, en nous appuyant sur les données, pour tenter une approche plus globale, plus “scientifique”. Et plus “data”. **</p>
+<p>Nous avons essayé de travailler un peu différemment, en nous appuyant sur les données, pour tenter une approche plus globale. Et plus “data”.</p>
 
 <p>Voici donc le mode d’emploi de cette enquête.</p>
 
-<p>Première étape, récupérer les données**, la matière première indispensable. En utilisant l’<a href="https://www.outwit.com/products/hub/">excellent outil Outwit Hub</a>, nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).</p>
+<p>Première étape, <strong>récupérer les données</strong>, la matière première indispensable. En utilisant l’<a href="https://www.outwit.com/products/hub/">excellent outil Outwit Hub</a>, nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).</p>
 
-<p>Scraper, comment ça marche ? Nous avons “programmé” un petit robot sous la forme d’un petit bout de script, un extracteur, à qui l’on a demandé de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué notre petit robot à l’ensemble des fiches concernant les annonces de Genève et des environs. Et hop, quelque heures plus tard, le tour était joué. </p>
+<p>Scraper, comment ça marche ? Nous avons “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, à qui l’on a demandé de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre petit extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs. Et hop, quelques heures plus tard, le tour était joué. </p>
+
+<p><a href="/img/airBNB.xml">Pour ceux que cela intéresse : le lien vers le script</a></p>
 
 <h3 id="un-tableau-de-1000-lignes">Un tableau de 1000 lignes</h3>
 
@@ -80,33 +80,93 @@ Dès demain et dès maintenant sur le site web du Temps, vous pourrez lire une e
 
 <p>Deuxième étape, <strong>nous avons questionné nos données</strong>.</p>
 
-<p>En utilisant Excel via la fonction de tri et surtout les tableaux croisés dynamiques, nous avons donc pu “interroger” nos données, de la même manière qu’un journaliste interroge une personne interviewée. Nous avons aussi pu obtenir par exemple le profil des locations, le prix médian (90 euros) ou moyen (110 euros). 
+<p>En utilisant Excel via la fonction de tri et surtout via les tableaux croisés dynamiques, nous avons donc pu “interroger” nos données, de la même manière qu’un journaliste interroge une personne interviewée. Nous avons aussi pu obtenir par exemple le profil des locations, le prix médian (90 euros) ou moyen (110 euros). 
 <br /><br />
 <img src="/img/carte1.png" alt="" />
 <br /><br />
-Toujours dans cette logique d’interrogation des données, nous avons tenté de placer automatiquement les annonces sur une carte, pour voir quels quartiers étaient les plus prisés. Si le site de Airbnb n’indique pas précisément l’adresse, on trouve cependant dans le code HTML les coordonnées précises… qui nous permet donc de localiser toutes nos annonces sur la carte (via Fusion Tables ou CartoDB par exemple). En soit rien de très surprenant, on trouve évidemment une densité très importante d’offres dans le centre ville. </p>
+Toujours dans cette logique d’interrogation des données, nous avons tenté de localiser automatiquement les annonces sur une carte, pour voir quels quartiers étaient les plus prisés. Si le site de Airbnb n’indique pas précisément l’adresse, on trouve cependant dans le code HTML les coordonnées précises… qui nous permet donc de localiser toutes nos annonces sur la carte (via Fusion Tables ou CartoDB par exemple). En soit rien de très surprenant, on trouve évidemment une densité très importante d’offres dans le centre ville. </p>
 
-<p>Nous avons ensuite utilisé le système du “Geocoding Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocoding simple, c’est le principe de base de Google <a href="https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;spell=1">quand vous lui donnez une adresse et qu’il la place sur une carte</a>. Eh bien, le geocing inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse précise (ex: 23 rue de Lyon, Genève). Nous avons ainsi pu récupérer l’adresse précise des appartements. Et même faire davantage : en croisant ces données avec le registre foncier de la ville de Genève, nous avons pu identifier les propriétaires qui nous intéressaient. 
-<br /><br />
-<img src="/img/carte2.png" alt="" />
-<br /><br />
-Dernier point de l“interrogation” de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles. </p>
+<h3 id="gocodage-invers-et-cadastre">Géocodage inversé et cadastre</h3>
 
-<h3 id="faites-connaissance-avec-jasmina-et-dimitri">Faites connaissance avec Jasmina et Dimitri</h3>
+<p>Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocoding simple, c’est le principe de base de Google <a href="https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;spell=1">quand vous lui donnez une adresse et qu’il la place sur une carte</a>. Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). 
+<br /><br /></p>
 
-<p>Et parmi, deux cas très saillants sont ressortis immédiatement : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et une certaine Jasmina, notre baronne de Airbnb, qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière un peu agile la recherche Google, nous avons réussi à retrouver le véritable nom de ces deux personnes. Nous les avons ensuite contactées au téléphone, et c’est là que la partie du journalisme traditionnel prend le relais sur la partie data. </p>
+<p><img src="/img/carte2.png" alt="" /></p>
+
+<p><br /><br />
+Dernière question “posée” de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles. Et c’est là que ça commence à être intéressant. </p>
+
+<h3 id="jasmina-et-dimitri">Jasmina et Dimitri</h3>
+
+<p>Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n’aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et une charmante Jasmina, notre baronne de Airbnb, qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données <a href="http://ge.ch/extraitfoncier/">avec le registre foncier de la ville de Genève</a>, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie “data”. </p>
 
 <p>Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier…</p>
 
+<hr />
+
+<center><blockquote class="twitter-tweet" lang="fr"><p>&quot;Nicolas Sarkozy n&#39;a jamais varié dans ses convictions&quot; dit P.Goujon <a href="https://twitter.com/hashtag/NSParis?src=hash">#NSParis</a></p>&mdash; Adrien Gaboulaud (@adriengaboulaud) <a href="https://twitter.com/adriengaboulaud/status/530777634155028480">7 Novembre 2014</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+<hr />
+
+<p><strong>Jean Abbiateci</strong> (Data Le Temps)</p>
+
 					<hr>
+
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dataletemps'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 				</section>
 				<section style="font-weight:bold; margin-bottom: 2em;">
 					 
-							<a rel="prev" class="a-hover"href="/2014/11/01/welcome.html"><i class="icon-double-angle-left"></i> Open source</a>
+							<a rel="prev" class="a-hover"href="/2014/11/01/welcome.html"><i class="icon-double-angle-left"></i> Bienvenue sur notre blog Data Le Temps</a>
 						
 						
-				</section>
+				</section><br><br>
 			</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 	</section>
 </main>

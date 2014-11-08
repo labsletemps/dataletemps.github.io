@@ -285,8 +285,9 @@ h2 {
 }
 h3 {
     font-size: 24px;
-    padding-top:10px;
-padding-bottom:10px;
+    padding-top:25px;
+    padding-bottom:25px;
+}
 }
 h4 {
     font-size: 18px;
@@ -383,7 +384,7 @@ abbr.initialism {
 blockquote {
     padding: 0 0 0 15px;
     margin: 0 0 20px;
-    border-left: 2px solid #950728;
+    border-left: 5px solid #a50000
 }
 blockquote p {
     margin-bottom: 0;
@@ -1842,8 +1843,8 @@ main.container, main.content>.container {
 }
 .post h2 {
     font-family: Droid serif, "Times New Roman", Times, serif;
-    font-size: 2.9em;
-
+    font-size: 2.7em;
+line-height: 1.1em;
     color:#333;
     padding: 1.5em 0 0.5em;
     letter-spacing: 0.05em
