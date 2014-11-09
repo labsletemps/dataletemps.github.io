@@ -46,13 +46,20 @@
 				<h5>09 November 2014</h5><br>
 				<h2 class="content">Comment nous avons enquêté avec les données d'Airbnb</h2>
 				<section>
-					<p><img src="/img/carte.png" alt="carte" />
+					<meta property="og:title" content="Comment nous avons enquêté avec les données d'Airbnb" />
+
+<p>&lt;me
+<meta property="og:url" content="http://dataletemps.github.io/2014/11/09/airbnb.html" />
+<meta property="og:image" content="Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste sur Airbnb à Genève." />
+<meta property="og:description" content="L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une bonne dose de datajournalisme" /></p>
+
+<p><img src="/img/carte.png" alt="carte" />
 <br /><br />
 Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste <a href="https://twitter.com/julieconti">Julie Conti</a> sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une bonne dose de datajournalisme. </p>
 
 <hr />
 
-<center><blockquote class="twitter-tweet" lang="fr"><p>&quot;Nicolas Sarkozy n&#39;a jamais varié dans ses convictions&quot; dit P.Goujon <a href="https://twitter.com/hashtag/NSParis?src=hash">#NSParis</a></p>&mdash; Adrien Gaboulaud (@adriengaboulaud) <a href="https://twitter.com/adriengaboulaud/status/530777634155028480">7 Novembre 2014</a></blockquote>
+<center><blockquote class="twitter-tweet" lang="fr"><p><a href="https://twitter.com/hashtag/Gen%C3%A8ve?src=hash">#Genève</a> Quand Airbnb vide les appartements (par <a href="https://twitter.com/Julieconti">@Julieconti</a>) <a href="http://t.co/RfsNSJAQWn">http://t.co/RfsNSJAQWn</a> <a href="http://t.co/DHXI07JxOt">pic.twitter.com/DHXI07JxOt</a></p>&mdash; Data Le Temps (@DataLeTemps) <a href="https://twitter.com/DataLeTemps/status/531404948488347648">9 Novembre 2014</a></blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 <hr />
 
@@ -72,7 +79,7 @@ Demain et dès à présent sur le site web du Temps, vous pourrez lire une enqu�
 
 <p>Scraper, comment ça marche ? Nous avons “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, à qui l’on a demandé de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre petit extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs. Et hop, quelques heures plus tard, le tour était joué. </p>
 
-<p><a href="/img/airBNB.xml">Pour ceux que cela intéresse : le lien vers le script</a></p>
+<p><a href="/img/airBNB.xml">Pour ceux que cela intéresse : le lien vers le script</a>.Vous pouvez le réutiliser.  </p>
 
 <h3 id="un-tableau-de-1000-lignes">Un tableau de 1000 lignes</h3>
 
@@ -88,7 +95,7 @@ Toujours dans cette logique d’interrogation des données, nous avons tenté de
 
 <h3 id="gocodage-invers-et-cadastre">Géocodage inversé et cadastre</h3>
 
-<p>Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocoding simple, c’est le principe de base de Google <a href="https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;spell=1">quand vous lui donnez une adresse et qu’il la place sur une carte</a>. Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). 
+<p>Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocodage simple, c’est le principe de base de Google : <a href="https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;spell=1">vous lui donnez une adresse et qu’il la place sur une carte</a>. Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). 
 <br /><br /></p>
 
 <p><img src="/img/carte2.png" alt="" /></p>
@@ -98,13 +105,13 @@ Dernière question “posée” de nos données : l’analyse du profil des prop
 
 <h3 id="jasmina-et-dimitri">Jasmina et Dimitri</h3>
 
-<p>Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n’aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et une charmante Jasmina, notre baronne de Airbnb, qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données <a href="http://ge.ch/extraitfoncier/">avec le registre foncier de la ville de Genève</a>, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie “data”. </p>
+<p>Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n’aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et une charmante Jasmina, notre baronne de Airbnb, qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données <a href="http://ge.ch/extraitfoncier/">avec le registre foncier de la ville de Genève (le cadastre)</a>, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie “data”. </p>
 
 <p>Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier…</p>
 
 <hr />
 
-<center><blockquote class="twitter-tweet" lang="fr"><p>&quot;Nicolas Sarkozy n&#39;a jamais varié dans ses convictions&quot; dit P.Goujon <a href="https://twitter.com/hashtag/NSParis?src=hash">#NSParis</a></p>&mdash; Adrien Gaboulaud (@adriengaboulaud) <a href="https://twitter.com/adriengaboulaud/status/530777634155028480">7 Novembre 2014</a></blockquote>
+<center><blockquote class="twitter-tweet" lang="fr"><p><a href="https://twitter.com/hashtag/Gen%C3%A8ve?src=hash">#Genève</a> Quand Airbnb vide les appartements (par <a href="https://twitter.com/Julieconti">@Julieconti</a>) <a href="http://t.co/RfsNSJAQWn">http://t.co/RfsNSJAQWn</a> <a href="http://t.co/DHXI07JxOt">pic.twitter.com/DHXI07JxOt</a></p>&mdash; Data Le Temps (@DataLeTemps) <a href="https://twitter.com/DataLeTemps/status/531404948488347648">9 Novembre 2014</a></blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
 <hr />
 
@@ -186,8 +193,17 @@ Dernière question “posée” de nos données : l’analyse du profil des prop
 
     <!-- Analytics
     ================================================== -->
-    <script>
-		// analytics code
+  
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56555674-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
     </script>	
 	</body>
 </html>
