@@ -2,13 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title> Comment nous avons enquêté avec les données du cadastre sur les ultra-riches de Cologny </title>
+		<title> Milliardaires de Cologny - comment nous avons utilisé les données du cadastre </title>
 		<!-- For responsive site
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<link rel="author" href="/humans.txt">
-		<meta property="og:title" content="Comment nous avons enquêté avec les données du cadastre sur les ultra-riches de Cologny" />
+		<meta property="og:title" content="Milliardaires de Cologny - comment nous avons utilisé les données du cadastre" />
 <meta property="og:description" content="A lire sur le blog des projets data et multimédias du Temps" />
 	
 		<link rel="stylesheet" href="/css/style.css">
@@ -47,7 +47,7 @@
 			</article>
 			<article class="post">
 				<h5>25 November 2014</h5><br>
-				<h2 class="content">Comment nous avons enquêté avec les données du cadastre sur les ultra-riches de Cologny</h2>
+				<h2 class="content">Milliardaires de Cologny - comment nous avons utilisé les données du cadastre</h2>
 				<section>
 					<p><img src="/img/une.jpg" alt="carte" /><br /><br /></p>
 
@@ -55,7 +55,7 @@
 
 <p><a href="http://www.letemps.ch/interactive/2014/cologny/">↦ Cliquez ici pour lire notre long format multimédia</a></p>
 
-<p>Comme notre enquête précédente (<a href="http://dataletemps.github.io/2014/11/09/airbnb.html">lire le making-of de notre enquête sur Airbnb</a>), cette investigation comporte elle-aussi une bonne dose de datajournalisme. </p>
+<p>Comme notre enquête précédente (<a href="http://dataletemps.github.io/2014/11/09/airbnb.html">lire le making-of de notre enquête sur Airbnb</a>), cette investigation comporte elle aussi une bonne dose de datajournalisme. </p>
 
 <p>Voici comment nous avons procédé et quelles ont été nos difficultés et nos réflexions. </p>
 
@@ -65,25 +65,25 @@
 
 <p>En marge de ce rendez-vous électoral, nous avons voulu faire un éclairage sur Cologny, terre d’asile pour milliardaires étrangers aux portes de Genève, qui cristallise souvent les imaginaires avec ses émirs saoudiens ou ses tycoons russes. </p>
 
-<p>Notre enquête s’intéresse à ce qui sont ces riches étrangers de Cologny, à leur organisation, à leurs activités, et leur départ possible ou non de la commune en cas de votation favorable. Sachant que la Suisse perd depuis assez longtemps son statut d’eldorado fiscal au profit d’autres destinations comme Dubaï ou Londres.  </p>
+<p>Notre enquête s’intéresse aux riches étrangers de Cologny, à leur organisation, à leurs activités économiques, et leur départ possible ou non de la commune en cas de votation favorable. Sachant que la Suisse perdait déjà depuis assez longtemps son statut d’eldorado fiscal au profit d’autres destinations comme Dubaï ou Londres.  </p>
 
 <h3 id="notre-base-de-donnes-principale--le-cadastre">Notre base de données principale : le cadastre</h3>
 
-<p>Malheureusement, ces étrangers de Cologny sont souvent aussi riches que discrets. Pour mener cette enquête, nous sommes donc partis d’une base de données : le registre foncier, le cadastre, de Colony. Dès le début de ce projet, nous savions que nous voulions articuler ce travail de datajournalisme, avec du reportage de terrain et de l’enquête “à l’ancienne”. Ces données foncières nous ont simplement permis d’aller voir un peu derrière les grilles hyper-sécurisées des grandes villas. </p>
+<p>Malheureusement, ces étrangers de Cologny sont souvent aussi riches que discrets. Pour mener cette enquête, nous sommes donc partis d’une base de données : le registre foncier, c’est à dire le cadastre de Colony. Dès le début de ce projet, nous savions que nous voulions articuler ce travail de datajournalisme, avec du reportage de terrain et de l’enquête “à l’ancienne”. Ces données foncières nous ont simplement permis d’aller voir un peu derrière les grilles hyper-sécurisées des grandes villas. </p>
 
-<p>Quel fut le modus operandi de ce projet ? </p>
+<p>Quel fut le <i>modus operandi</i> de ce projet ? </p>
 
-<p>Nous avons d’abord récupéré, avec l’aide d’un script informatique, les (<a href="http://ge.ch/extraitfoncier/">données publiques du registre foncier</a>) disponibles sur le site de l’Etat de Genève. Ces données sont publiques et accessibles à tous.Nous avons utilisés le logiciel Outwit pour cela. </p>
+<p>Nous avons d’abord récupéré, avec l’aide d’un script informatique, les (<a href="http://ge.ch/extraitfoncier/">données publiques du registre foncier</a>) disponibles sur le site de l’Etat de Genève. Ces données sont publiques et accessibles à tous. Nous avons utilisé le logiciel Outwit pour cela. </p>
 
-<p>Vous pouvez voir ci-dessous le modèle d’une fiche (on a enlevé le nom et la date de naissance). Les données du cadastre contiennent à la fois des données très précises (biens immobiliers, date de naissance) mais aucune sur la nationalité ou la profession des propriétaires. Et bien évidemment, leur statut fiscal (au forfait ou pas) n’est pas mentionné. </p>
+<p>Vous pouvez voir ci-dessous le modèle d’une fiche (on a enlevé le nom et la date de naissance). Les données du cadastre contiennent à la fois des données très précises (biens immobiliers, date de naissance) mais aucune sur la nationalité ou la profession des propriétaires. Et bien évidemment, le statut fiscal (au forfait ou pas) n’est pas mentionné (ce qui est évidemment logique).</p>
 
 <p><img src="/img/une1.jpg" alt="carte" /><br /><br /></p>
 
-<p>Avec ce “scraping”, nous avons récupéré un tableau de plusieurs milliers de ligne. Il nous fallait dans ce tableau, trouver un moyen d’identifier là où aller chercher les plus riches qui nous intéressaient. Et pour des raisons de temps et de ressources humaines, nous avons du faire un choix. </p>
+<p>Avec ce “scraping”, nous avons récupéré un tableau de plusieurs milliers de ligne, tous les propriétaires de Cologny. Il nous fallait dans ce tableau, trouver un moyen d’identifier comment isoler les plus riches qui nous intéressaient. Et pour des raisons de temps et de ressources humaines, nous avons fait un choix. </p>
 
 <h3 id="notre-choix--villas-et-terrains-de-plus-de-1500m2">Notre choix : villas et terrains de plus de 1500m2</h3>
 
-<p>Nous avons commencé par nous concentrer sur les maisons individuelles, les villas. Et nous avons choisi de ne garder que les terrains de plus de 1500 m2. Bien évidemment, ce choix est subjectif : on peut riche et vivre dans un studio. Ou inversement, vivre dans un immense domaine et être fauché. Peut-être Bill Gates a-t-il un appartement et nous l’avons “raté”. C’est un choix mais nous l’assumons.</p>
+<p>Nous avons commencé par nous concentrer sur les maisons individuelles, les villas. Et nous avons choisi de ne garder que les terrains de plus de 1500 m2. Bien évidemment, ce choix est subjectif : on peut être milliardaire dans un studio. Ou inversement, vivre dans un immense domaine et être fauché. Peut-être Bill Gates a-t-il un appartement à Cologny et nous l’avons “raté”. C’est un choix mais nous l’assumons.</p>
 
 <p><img src="http://www.letemps.ch/interactive/2014/cologny/assets/img/col1.jpg" alt="carte" /><br /><br /></p>
 
@@ -95,35 +95,35 @@
 
 <p>Ces données, il a fallu les enrichir. Nous avons donc cherché, ligne par ligne, la nationalité, l’origine de la fortune et la date d’arrivée dans la commune de chaque propriétaire, ainsi que son activité professionnelle.</p>
 
-<p>Nous avions pour nous aider plusieurs bases de données à disposition, dans lesquels nous avions piocher. </p>
+<p>Nous avions pour nous aider plusieurs bases de données à disposition, dans lesquelles nous avons pioché. </p>
 
 <ul>
-  <li>Zeflix, la base de données du commerce suisse</li>
-  <li>Teledata, un site payant utilisé par la compatibilité du Temps qui lui aussi regroupe plusieurs base de données</li>
+  <li>Zefix, la base de données du commerce suisse </li>
+  <li>Teledata, un site payant qui lui aussi regroupe plusieurs base de données</li>
   <li>Opencorporate, une base de données ouverte sur les entreprises du monde entier</li>
-  <li>Linkedin, le réseau social professionnel</li>
-  <li>La recherche Google, sans doute l’outil le plus efficace au final</li>
+  <li>Linkedin, le réseau social professionnel (pour recouper des infos)</li>
+  <li>La recherche Google, sans doute l’outil le plus efficace au final (là aussi pour recouper les informations)</li>
 </ul>
 
 <p>Au début, nous avons pensé que nous pourrions automatiser ce travail. Peine perdue : une multitude de situations nous ont empêché.</p>
 
-<p>Tout d’abord, une grande partie des données sont enregistrées au nom de l’épouse (nous avons ainsi échoué à identifier le propriétaire réel de l’une des plus grandes proprietés de Cologny installé tout récemment). </p>
+<p>Tout d’abord, une grande partie des propriétés sont enregistrées au nom de l’épouse (ainsi, nous avons ainsi échoué à identifier le propriétaire réel de l’une des plus grandes proprietés de Cologny installé tout récemment). </p>
 
 <p>Ensuite, il y a une série de cas qui rendent ce croisement de données automatique impossible : les couples divorcés, les remariages, les noms de jeune fille, les noms composés, les fratries, les maisons enregistrées au nom des enfants (souvent de cadeaux), les propriétaires décédés, les orthographes différentes (merci à la famille royale saoudienne)…</p>
 
 <p><img src="/img/une2.jpg" alt="carte" /><br /><br /></p>
 
-<p>Bref, nous avons donc du croiser ces données “à la main”. Et autant les informations sur les “grands propriétaires” sont très faciles d’accès. A l’inverse, les “petits” ne sont référencés nulle part. Dire que ce travail fut fastidieux et ingrats est un euphémisme. Au final, il nous aura pris environ trois jours. </p>
+<p>Bref, nous avons donc du croiser ces données “à la main”. Et autant les informations sur les “grands propriétaires” sont très faciles d’accès, autant à l’inverse, les “petits” ne sont référencés nulle part. Dire que ce travail fut fastidieux et ingrat est un euphémisme. Au final, il nous aura fallu environ trois jours. </p>
 
-<h3 id="quand-le-journalisme-traditionnel-prend-ensuite-le-relais">Quand le journalisme traditionnel prend ensuite le relais</h3>
+<h3 id="quand-le-journalisme-traditionnel-prend-le-relais">Quand le journalisme “traditionnel” prend le relais</h3>
 
-<p>Au final, nous avons tout de même eu notre base de données enrichies par nos soins, 200 riches étrangers que nous avons pu regrouper par nationalité, secteur d’activité et date d’arrivée (on note ainsi plusieurs vagues d’implantation depuis l’après-guerre). Plusieurs tableaux croisés dynamiques nous ont permis de construire notre infographie publiée dans le journal et sur le site du Temps. </p>
+<p>Au final, nous avons tout de même constitué notre base de données enrichie par nos soins, 200 riches étrangers que nous avons pu regrouper par nationalité, secteur d’activité et date d’arrivée (on note ainsi plusieurs vagues d’implantation depuis l’après-guerre). Plusieurs tableaux croisés dynamiques dans notre tableur nous ont permis de construire notre infographie publiée dans le journal et sur le site du Temps. </p>
 
-<p>Pour finir, les données publiques de la “Feuille d’avis officielle” (FAO) de Genève nous ont permis de connaître les noms et l’adresse des acheteurs, ainsi que des vendeurs de propriétés depuis 2012, avec le montant et la date de la transaction. Notre base de données ainsi complète, nous nous sommes rendus sur le terrain avec des techniques de journalisme plus traditionnelle. Ce fut d’ailleurs le plus gros du travail, pour interroger des promoteurs, des avocats, des politiques, qui puissent nous raconter ce que nous avions pu percevoir grâce à ce travail de datajournalisme.</p>
+<p>Pour finir, les données publiques de la “Feuille d’avis officielle” (FAO) de Genève nous ont permis de connaître les noms et l’adresse des acheteurs, ainsi que des vendeurs de propriétés depuis 2012, avec le montant et la date de la transaction. Notre base de données ainsi complète, nous nous sommes rendus sur le terrain avec des techniques de journalisme plus traditionnelles. Ce fut d’ailleurs le plus gros du travail, interroger des promoteurs, des avocats, des politiques, qui puissent nous raconter et nous expliquer ce que nous avions pu percevoir grâce à ce travail de “datajournalistes”.</p>
 
-<p>Un mot - important - pour finir : ces données contiennent, comme nous l’écrivions plus haut, les adresses précises de chaque résident. Nous les avons utilisé en interne pour pour notre enquête, de même que les dates de naissance. Mais nous avons choisi de ne jamais publier ces adresses (sur une carte par exemple), par respect pour la sphère privée. </p>
+<p>Un mot important pour finir : ces données contiennent, comme nous l’écrivions plus haut, les adresses précises de chaque résident. Nous les avons utilisées en interne pour notre enquête, de même que les dates de naissance. Mais nous avons choisi de ne jamais les publier.</p>
 
-<p><a href="http://www.letemps.ch/interactive/2014/cologny/">Le résultat de cette enquête est à lire ici. </a></p>
+<p><a href="http://www.letemps.ch/interactive/2014/cologny/">Le résultat de cette enquête est à lire ici.</a></p>
 
 					<hr>
 
@@ -161,7 +161,9 @@
 					 
 							<a rel="prev" class="a-hover"href="/2014/11/09/airbnb.html"><i class="icon-double-angle-left"></i> Comment nous avons enquêté avec les données d'Airbnb</a>
 						
-						
+						 
+							<a rel="next" style="float:right" class="a-hover"href="/2014/11/30/live.html"> <i class=" icon-double-angle-right"></i></a>
+					
 				</section><br><br>
 			</article>
 
