@@ -7,54 +7,6 @@
 		<atom:link href="http://dataletemps.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title></title>
-				<description>&lt;p&gt;&lt;img src=&quot;/img/propos.jpg&quot; alt=&quot;carte&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Depuis deux dimances de votation, vous avez pu découvrir notre application de live (prénommée joliment Votatio, parce que nous avons oublié le N au moment de la mettre sur Github). Cette application nous permet de proposer aux lecteurs du Temps un suivi de ce dimanche électoral en direct. C’est la deuxième fois que nous utilisons ce système d’application “compagnon”, qui doit permettre d’offrir une expérience de direct, plus réactive que nous permet de le faire notre site web. Et surtout complémentaire. &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.letemps.ch/votations/&quot;&gt;↦ Vous pouvez la voir ici&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Bien entendu, ce système n’a évidemment rien de révolutionnaire et est utilisé par de nombreux médias. Voici simplement quelques notes techniques pour ceux qui seraient intéressés. &lt;/p&gt;
-
-&lt;p&gt;Comme toujours, nous avons mis le code sur Github, par ici. Voilà comment elle fonctionne..&lt;/p&gt;
-
-&lt;h3 id=&quot;une-ossature-simple&quot;&gt;Une ossature simple&lt;/h3&gt;
-
-&lt;p&gt;Nous voulions quelque chose de simple : nous nous sommes basés, de manière beaucoup beaucoup plus simplifiée, sur le travail de la NPR pour la couverture des élections en 2012 (voir ici). En plus, nous voulions quelque chose de très simple, épuré… l’idée était de ne pas faire un deuxième site letemps.ch, mais un site “compagnon” qui offre de l’information dans un temps plus réactif. Si le site fonctionne sur mobile, l’expérience n’est vraiment pas optimum, c’est un chantier pour la V3. &lt;/p&gt;
-
-&lt;h3 id=&quot;le-live--24-live-blog&quot;&gt;Le live : 24 Live Blog&lt;/h3&gt;
-
-&lt;p&gt;Pour l’ossature du live, nous nous sommes appuyés sur l’excellent 24 Live Blog, une application de &lt;a href=&quot;http://www.24liveblog.com/&quot;&gt;24 Live Blog&lt;/a&gt;
-qui a le bon goût d’être gratuite (sans publicité en plus), d’avoir une interface très fonctionnelle, et de ne jamais planter. Nous l’avions testé lors de la précèdente votation du 30 septembre dernier et notre journaliste chargé de l’animation du live avait trouvé le système d’une grande simpicité. Il est en plus possible de la personnaliser un peu avec du CSS. &lt;/p&gt;
-
-&lt;h3 id=&quot;les-graphiques--highcharts-et-highmaps&quot;&gt; Les graphiques : Highcharts et Highmaps&lt;/h3&gt;
-
-&lt;p&gt;Pour la partie graphique, trois cartes cantonales et un graphique à bar, nous nous sommes appuyés sur les deux librairies &lt;a href=&quot;http://www.highcharts.com/&quot;&gt;Highcharts et Highmaps&lt;/a&gt;. Elles ont l’intérêt d’être relativement faciles à utiliser, via une API très bien documentée. L’idée était d’avoir des élements très efficaces de compréhension des résultats. &lt;/p&gt;
-
-&lt;h3 id=&quot;le-back-office--google-document&quot;&gt;Le back-office : Google Document&lt;/h3&gt;
-
-&lt;p&gt;C’est l’élement central pour la mise en ligne des résultats qui tombent à vitesse grand V à partie de 11h. Nous voulions de la réactivité. Lors de la première expérience, nous avions été obligé de bidouiller le code en direct : c’est à la fois peu pratique et dangereux (personne n’est à l’abri d’une suppression d’un bout de code intempestif). &lt;/p&gt;
-
-&lt;p&gt;Pour le back-office et la mise à jour des résultats, nous avons connecté nos trois cartes et notre graphique avec une simple feuille de Google Doc, avec 4 onglets pour nos 4 graphiques. Il suffit de changer les données dans notre Google Doc pour que la carte se colore. Quelques formules permettent de simplifier la tâche à la personne chargée de &lt;/p&gt;
-
-&lt;h3 id=&quot;le-mode-collection-de-tweetdeck&quot;&gt;Le mode Collection de Tweetdeck&lt;/h3&gt;
-
-&lt;p&gt;En gros, il suffit de changer les chiffres dans les maps pour que la coloration des cantons se fasse automatiquement.&lt;/p&gt;
-
-&lt;p&gt;A améliorer pour la prochaine fois&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Proposer une vraie expérience mobile, beaucoup mieux désignée&lt;/li&gt;
-  &lt;li&gt;Proposer plus de granularité dans les résultats, en permettant aux électeurs d’avoir des cartes beaucoup plus précises. Le problème se heurte au fait que les données communanles&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-				<pubDate>Sun, 30 Nov 2014 00:00:00 +0100</pubDate>
-				<link>http://dataletemps.github.io/2014/11/30/live.html</link>
-				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/30/live.html</guid>
-			</item>
-		
-			<item>
 				<title>Milliardaires de Cologny - comment nous avons utilisé les données du cadastre</title>
 				<description>&lt;p&gt;&lt;img src=&quot;/img/une.jpg&quot; alt=&quot;carte&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -62,7 +14,7 @@ qui a le bon goût d’être gratuite (sans publicité en plus), d’avoir une i
 
 &lt;p&gt;&lt;a href=&quot;http://www.letemps.ch/interactive/2014/cologny/&quot;&gt;↦ Cliquez ici pour lire notre long format multimédia&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Comme notre enquête précédente (&lt;a href=&quot;http://dataletemps.github.io/2014/11/09/airbnb.html&quot;&gt;lire le making-of de notre enquête sur Airbnb&lt;/a&gt;), cette investigation comporte elle aussi une bonne dose de datajournalisme. &lt;/p&gt;
+&lt;p&gt;Comme notre enquête précédente (&lt;a href=&quot;http://dataletemps.github.io/2014/11/09/airbnb.html&quot;&gt;lire le making-of de notre enquête sur Airbnb&lt;/a&gt;), cette investigation s’appuie aussi sur une démarche de datajournalisme. &lt;/p&gt;
 
 &lt;p&gt;Voici comment nous avons procédé et quelles ont été nos difficultés et nos réflexions. &lt;/p&gt;
 
@@ -70,33 +22,33 @@ qui a le bon goût d’être gratuite (sans publicité en plus), d’avoir une i
 
 &lt;p&gt;L’actualité tout d’abord: les Suisses se prononceront le 30 novembre sur l’abolition ou non des forfaits fiscaux, un régime fiscal préférentiel qui permet notamment aux riches étrangers de bénéficier d’un taux d’imposition relativement bas et attractif. &lt;/p&gt;
 
-&lt;p&gt;En marge de ce rendez-vous électoral, nous avons voulu faire un éclairage sur Cologny, terre d’asile pour milliardaires étrangers aux portes de Genève, qui cristallise souvent les imaginaires avec ses émirs saoudiens ou ses tycoons russes. &lt;/p&gt;
+&lt;p&gt;En marge de ce rendez-vous électoral, nous avons voulu faire un éclairage sur Cologny, qui compte plusieurs milliardaires étrangers et qui cristallise souvent les imaginaires avec ses émirs saoudiens ou ses tycoons russes. &lt;/p&gt;
 
-&lt;p&gt;Notre enquête s’intéresse aux riches étrangers de Cologny, à leur organisation, à leurs activités économiques, et leur départ possible ou non de la commune en cas de votation favorable. Sachant que la Suisse perdait déjà depuis assez longtemps son statut d’eldorado fiscal au profit d’autres destinations comme Dubaï ou Londres.  &lt;/p&gt;
+&lt;p&gt;Notre enquête s’intéresse donc aux riches étrangers de Cologny, à leur organisation, à leurs activités économiques, et leur départ possible ou non de la commune en cas de votation favorable. Sachant que la Suisse perdait déjà depuis assez longtemps son statut d’eldorado fiscal au profit d’autres destinations comme Dubaï ou Londres.  &lt;/p&gt;
 
 &lt;h3 id=&quot;notre-base-de-donnes-principale--le-cadastre&quot;&gt;Notre base de données principale : le cadastre&lt;/h3&gt;
 
-&lt;p&gt;Malheureusement, ces étrangers de Cologny sont souvent aussi riches que discrets. Pour mener cette enquête, nous sommes donc partis d’une base de données : le registre foncier, c’est à dire le cadastre de Colony. Dès le début de ce projet, nous savions que nous voulions articuler ce travail de datajournalisme, avec du reportage de terrain et de l’enquête “à l’ancienne”. Ces données foncières nous ont simplement permis d’aller voir un peu derrière les grilles hyper-sécurisées des grandes villas. &lt;/p&gt;
+&lt;p&gt;Malheureusement, ces étrangers de Cologny sont souvent aussi riches que discrets. Pour mener cette enquête, nous sommes donc partis d’une base de données : le registre foncier, c’est à dire le cadastre de Colony. Dès le début de ce projet, nous savions que nous voulions articuler ce travail de datajournalisme, avec du reportage de terrain et de l’enquête “à l’ancienne”.  &lt;/p&gt;
 
 &lt;p&gt;Quel fut le &lt;i&gt;modus operandi&lt;/i&gt; de ce projet ? &lt;/p&gt;
 
 &lt;p&gt;Nous avons d’abord récupéré, avec l’aide d’un script informatique, les (&lt;a href=&quot;http://ge.ch/extraitfoncier/&quot;&gt;données publiques du registre foncier&lt;/a&gt;) disponibles sur le site de l’Etat de Genève. Ces données sont publiques et accessibles à tous. Nous avons utilisé le logiciel Outwit pour cela. &lt;/p&gt;
 
-&lt;p&gt;Vous pouvez voir ci-dessous le modèle d’une fiche (on a enlevé le nom et la date de naissance). Les données du cadastre contiennent à la fois des données très précises (biens immobiliers, date de naissance) mais aucune sur la nationalité ou la profession des propriétaires. Et bien évidemment, le statut fiscal (au forfait ou pas) n’est pas mentionné (ce qui est évidemment logique).&lt;/p&gt;
+&lt;p&gt;Vous pouvez voir ci-dessous le modèle d’une fiche (nous avons nlevé le nom et la date de naissance). Les données du cadastre contiennent à la fois des données très précises (biens immobiliers, date de naissance) mais aucune sur la nationalité ou la profession des propriétaires. Et bien évidemment, le statut fiscal (au forfait ou pas) n’est pas, logiquement, mentionné.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/une1.jpg&quot; alt=&quot;carte&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Avec ce “scraping”, nous avons récupéré un tableau de plusieurs milliers de ligne, tous les propriétaires de Cologny. Il nous fallait dans ce tableau, trouver un moyen d’identifier comment isoler les plus riches qui nous intéressaient. Et pour des raisons de temps et de ressources humaines, nous avons fait un choix. &lt;/p&gt;
+&lt;p&gt;Avec ce “scraping”, nous avons récupéré un tableau de plusieurs milliers de ligne, pour résumé tous les propriétaires de Cologny. Il nous fallait dans ce tableau, trouver un moyen d’identifier comment isoler les plus personnes riches qui nous intéressaient. Et pour des raisons de temps et de ressources humaines, nous avons fait un choix. &lt;/p&gt;
 
 &lt;h3 id=&quot;notre-choix--villas-et-terrains-de-plus-de-1500m2&quot;&gt;Notre choix : villas et terrains de plus de 1500m2&lt;/h3&gt;
 
-&lt;p&gt;Nous avons commencé par nous concentrer sur les maisons individuelles, les villas. Et nous avons choisi de ne garder que les terrains de plus de 1500 m2. Bien évidemment, ce choix est subjectif : on peut être milliardaire dans un studio. Ou inversement, vivre dans un immense domaine et être fauché. Peut-être Bill Gates a-t-il un appartement à Cologny et nous l’avons “raté”. C’est un choix mais nous l’assumons.&lt;/p&gt;
+&lt;p&gt;Nous avons commencé par nous concentrer sur les maisons individuelles, les villas. Et nous avons choisi de ne garder que les terrains de plus de 1500 m2. Bien évidemment, ce choix est subjectif : on peut être milliardaire dans un studio. Ou inversement, vivre dans un immense domaine en étant pauvre. Peut-être Bill Gates a-t-il un appartement à Cologny et nous l’avons “raté”.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://www.letemps.ch/interactive/2014/cologny/assets/img/col1.jpg&quot; alt=&quot;carte&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Avec ce choix (villas sur un terrain de + de 1500 m2), nous avions donc à disposition une base de données d’environ 500 propriétaires, suisses et étrangers.&lt;/p&gt;
 
-&lt;p&gt;C’est là que le travail le plus ingrat a commencé…&lt;/p&gt;
+&lt;p&gt;C’est là que le travail le plus difficile a commencé…&lt;/p&gt;
 
 &lt;h3 id=&quot;de-la-difficult-de-croiser-les-bases-de-donnes&quot;&gt;De la difficulté de croiser les bases de données&lt;/h3&gt;
 
@@ -108,23 +60,23 @@ qui a le bon goût d’être gratuite (sans publicité en plus), d’avoir une i
   &lt;li&gt;Zefix, la base de données du commerce suisse &lt;/li&gt;
   &lt;li&gt;Teledata, un site payant qui lui aussi regroupe plusieurs base de données&lt;/li&gt;
   &lt;li&gt;Opencorporate, une base de données ouverte sur les entreprises du monde entier&lt;/li&gt;
-  &lt;li&gt;Linkedin, le réseau social professionnel (pour recouper des infos)&lt;/li&gt;
+  &lt;li&gt;Linkedin, le réseau social professionnel (pour recouper des informations)&lt;/li&gt;
   &lt;li&gt;La recherche Google, sans doute l’outil le plus efficace au final (là aussi pour recouper les informations)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Au début, nous avons pensé que nous pourrions automatiser ce travail. Peine perdue : une multitude de situations nous ont empêché.&lt;/p&gt;
+&lt;p&gt;Au début, nous avons pensé que nous pourrions automatiser ce travail. Peine perdue : une multitude de situations nous ont empêché de le faire. &lt;/p&gt;
 
-&lt;p&gt;Tout d’abord, une grande partie des propriétés sont enregistrées au nom de l’épouse (ainsi, nous avons ainsi échoué à identifier le propriétaire réel de l’une des plus grandes proprietés de Cologny installé tout récemment). &lt;/p&gt;
+&lt;p&gt;Tout d’abord, une grande partie des propriétés sont enregistrées au nom de l’épouse (nous avons par exemple échoué à identifier le propriétaire réel de l’une des plus grandes proprietés de Cologny installé tout récemment). &lt;/p&gt;
 
-&lt;p&gt;Ensuite, il y a une série de cas qui rendent ce croisement de données automatique impossible : les couples divorcés, les remariages, les noms de jeune fille, les noms composés, les fratries, les maisons enregistrées au nom des enfants (souvent de cadeaux), les propriétaires décédés, les orthographes différentes (merci à la famille royale saoudienne)…&lt;/p&gt;
+&lt;p&gt;Ensuite, il y a une série de cas précis qui rendent ce croisement de données automatique impossible : les couples divorcés, les remariages, les noms de jeune fille, les noms composés, les fratries, les maisons enregistrées au nom des enfants (souvent de cadeaux), les propriétaires décédés, les orthographes différentes…&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/une2.jpg&quot; alt=&quot;carte&quot; /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Bref, nous avons donc du croiser ces données “à la main”. Et autant les informations sur les “grands propriétaires” sont très faciles d’accès, autant à l’inverse, les “petits” ne sont référencés nulle part. Dire que ce travail fut fastidieux et ingrat est un euphémisme. Au final, il nous aura fallu environ trois jours. &lt;/p&gt;
+&lt;p&gt;Au final, nous avons donc du croiser ces données “à la main”. Et autant les informations sur les “grands propriétaires” sont très faciles d’accès, autant à l’inverse, les “petits” ne sont référencés nulle part. &lt;/p&gt;
 
 &lt;h3 id=&quot;quand-le-journalisme-traditionnel-prend-le-relais&quot;&gt;Quand le journalisme “traditionnel” prend le relais&lt;/h3&gt;
 
-&lt;p&gt;Au final, nous avons tout de même constitué notre base de données enrichie par nos soins, 200 riches étrangers que nous avons pu regrouper par nationalité, secteur d’activité et date d’arrivée (on note ainsi plusieurs vagues d’implantation depuis l’après-guerre). Plusieurs tableaux croisés dynamiques dans notre tableur nous ont permis de construire notre infographie publiée dans le journal et sur le site du Temps. &lt;/p&gt;
+&lt;p&gt;Nous avons tout de même constitué notre base de données enrichie par nos soins, 200 riches étrangers que nous avons pu regrouper par nationalité, secteur d’activité et date d’arrivée (on note ainsi plusieurs vagues d’implantation depuis l’après-guerre). Plusieurs tableaux croisés dynamiques dans notre tableur nous ont permis de construire notre infographie publiée dans le journal et sur le site du Temps. &lt;/p&gt;
 
 &lt;p&gt;Pour finir, les données publiques de la “Feuille d’avis officielle” (FAO) de Genève nous ont permis de connaître les noms et l’adresse des acheteurs, ainsi que des vendeurs de propriétés depuis 2012, avec le montant et la date de la transaction. Notre base de données ainsi complète, nous nous sommes rendus sur le terrain avec des techniques de journalisme plus traditionnelles. Ce fut d’ailleurs le plus gros du travail, interroger des promoteurs, des avocats, des politiques, qui puissent nous raconter et nous expliquer ce que nous avions pu percevoir grâce à ce travail de “datajournalistes”.&lt;/p&gt;
 
@@ -143,7 +95,7 @@ qui a le bon goût d’être gratuite (sans publicité en plus), d’avoir une i
 
 &lt;p&gt;&lt;img src=&quot;/img/carte.png&quot; alt=&quot;carte&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;
-Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste &lt;a href=&quot;https://twitter.com/julieconti&quot;&gt;Julie Conti&lt;/a&gt; sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une bonne dose de datajournalisme. &lt;/p&gt;
+Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste &lt;a href=&quot;https://twitter.com/julieconti&quot;&gt;Julie Conti&lt;/a&gt; sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une s’appuie sur une démarche de datajournalisme. &lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -153,7 +105,7 @@ Demain et dès à présent sur le site web du Temps, vous pourrez lire une enqu�
 
 &lt;h3 id=&quot;du-journalisme-de-donnes&quot;&gt;Du journalisme de données&lt;/h3&gt;
 
-&lt;p&gt;Tout est parti d’une question. &lt;/p&gt;
+&lt;p&gt;Tout est parti d’un questionnement. &lt;/p&gt;
 
 &lt;p&gt;Dans de nombreuses grandes villes -  Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site “cool” de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ? &lt;/p&gt;
 
@@ -165,13 +117,13 @@ Demain et dès à présent sur le site web du Temps, vous pourrez lire une enqu�
 
 &lt;p&gt;Première étape, &lt;strong&gt;récupérer les données&lt;/strong&gt;, la matière première indispensable. En utilisant l’&lt;a href=&quot;https://www.outwit.com/products/hub/&quot;&gt;excellent outil Outwit Hub&lt;/a&gt;, nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).&lt;/p&gt;
 
-&lt;p&gt;Scraper, comment ça marche ? Nous avons “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, à qui l’on a demandé de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre petit extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs. Et hop, quelques heures plus tard, le tour était joué. &lt;/p&gt;
+&lt;p&gt;Nous avons ainsi “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, qui nous a permis de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs. &lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/img/airBNB.xml&quot;&gt;Pour ceux que cela intéresse : le lien vers le script&lt;/a&gt;.Vous pouvez le réutiliser.  &lt;/p&gt;
 
 &lt;h3 id=&quot;un-tableau-de-1000-lignes&quot;&gt;Un tableau de 1000 lignes&lt;/h3&gt;
 
-&lt;p&gt;Au final, nous avons récupéré un tableau de 2000 lignes. Nous avons gardé uniquement les annonces de  Genève et ses environs… soit un petit millier de lignes. Bien sûr, cette “capture” n’est qu’une photographie à un instant T du marché locatif d’Airbnb. Mais à l’inverse de sites d’annonces d’objets (type le Bon Coin), le site d’Airbnb ne change pas à un rythme aussi rapide.&lt;/p&gt;
+&lt;p&gt;Au final, nous avons récupéré un tableau de 2000 lignes. Nous avons gardé uniquement les annonces de  Genève et ses environs… soit un petit millier de lignes. Bien sûr, cette “capture” n’est qu’une photographie à un instant T du marché locatif d’Airbnb. Mais à l’inverse d’autres sites d’annonces, le site d’Airbnb ne change pas à un rythme aussi rapide.&lt;/p&gt;
 
 &lt;p&gt;Deuxième étape, &lt;strong&gt;nous avons questionné nos données&lt;/strong&gt;.&lt;/p&gt;
 
@@ -189,11 +141,11 @@ Toujours dans cette logique d’interrogation des données, nous avons tenté de
 &lt;p&gt;&lt;img src=&quot;/img/carte2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;
-Dernière question “posée” de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles. Et c’est là que ça commence à être intéressant. &lt;/p&gt;
+Dernière question “posée” de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles.  &lt;/p&gt;
 
-&lt;h3 id=&quot;jasmina-et-dimitri&quot;&gt;Jasmina et Dimitri&lt;/h3&gt;
+&lt;h3 id=&quot;trouver-les-multi-locataires&quot;&gt;Trouver les multi-locataires&lt;/h3&gt;
 
-&lt;p&gt;Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n’aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et une charmante Jasmina, notre baronne de Airbnb, qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données &lt;a href=&quot;http://ge.ch/extraitfoncier/&quot;&gt;avec le registre foncier de la ville de Genève (le cadastre)&lt;/a&gt;, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie “data”. &lt;/p&gt;
+&lt;p&gt;Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n’aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et le profil de “ Jasmina” qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données &lt;a href=&quot;http://ge.ch/extraitfoncier/&quot;&gt;avec le registre foncier de la ville de Genève (le cadastre)&lt;/a&gt;, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie “data”. &lt;/p&gt;
 
 &lt;p&gt;Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier…&lt;/p&gt;
 
