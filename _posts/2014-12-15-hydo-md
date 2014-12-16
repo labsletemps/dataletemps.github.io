@@ -1,77 +1,28 @@
 ---
 layout: post_page
-title: Comment nous avons enquêté avec les données d'Airbnb 
+title: "Comment nous avons enquêté avec les données d'Airbnb"
+published: true
 ---
-<meta property="og:title" content="Comment nous avons enquêté avec les données d'Airbnb" />
 
+---
+layout: post_page
+title: Bienvenue sur notre blog Data Le Temps
+---
 
+![carte](/img/propos.jpg)<br><br>
 
+Vous êtes ici sur le tout nouveau blog tenu par l'équipe Data Le Temps. Bienvenue. 
 
+Chaque semaine, le Temps et son équipe Data publie des applications interactives, des grands formats multimédias et des enquêtes utilisant les données. Nous avons choisi de raconter sur ce blog la manière dont certaines de ces applications sont conçues et la façon dont nous travaillons.
 
-![carte](/img/carte.png)
-<br><br>
-Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste [Julie Conti](https://twitter.com/julieconti) sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une s'appuie sur une démarche de datajournalisme. 
+### Code et mode d'emploi
 
------------------
+Nous partagerons ici :
 
-<center><blockquote class="twitter-tweet" lang="fr"><p><a href="https://twitter.com/hashtag/Gen%C3%A8ve?src=hash">#Genève</a> Quand Airbnb vide les appartements (par <a href="https://twitter.com/Julieconti">@Julieconti</a>) <a href="http://t.co/RfsNSJAQWn">http://t.co/RfsNSJAQWn</a> <a href="http://t.co/DHXI07JxOt">pic.twitter.com/DHXI07JxOt</a></p>&mdash; Data Le Temps (@DataLeTemps) <a href="https://twitter.com/DataLeTemps/status/531404948488347648">9 Novembre 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
-----------------------
+**Notre code.** Nos applications interactives, nos *newsapps*, sont écrites avec du texte et  des images mais aussi avec du html, du css, du javascript, du python... Sans compter le recours à des litres de café et à des cachets d'aspirine pour le mal de tête. Notre code est développé pour nos propres projets ou nos propres outils, et souvent dans l'urgence. Il est parfois écrit parfois un peu "à l'arrache". Mais si ce code peut vous aider, nous en sommes ravis et vous voulez y jeter un oeil ou piocher dedans. Ce que nous faisons nous-même très souvent dans le code des nos confrères qui sont dans cette même démarche de journalisme ouvert et open source. 
 
-###Du journalisme de données
+**Nos méthodes de travail.** Nous avons choisi de raconter ici comment nous travaillons, par souci de transparence et par souci de partage. Nous parlerons ici des dessous de nos enquêtes, des difficultés que nous rencontrons, des nos choix et de nos erreurs. Nous publions dans la plupart des cas nos données. 
 
-Tout est parti d’un questionnement. 
+**Notre veille.** Nous partageons sur Facebook et Twitter notre veille sur les projets des autres et les meilleurs outils existants, parce que là aussi, nous profitons de la veille de la communauté (si vous êtes sur Twitter, ça se passe sur le hastag #ddj). Vous pouvez nous suivre [sur notre compte Twitter](http://www.twitter.com/dataletemps) et également [sur notre page Facebook](https://www.facebook.com/pages/Data-Le-Temps/703519386397933?fref=ts)
 
-Dans de nombreuses grandes villes -  Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site "cool" de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ? 
-
-
-Pour répondre à ces questions, nous aurions pu, en surfant sur le site, en lisant les commentaires, aller récupérer des informations et des témoignages au cas par cas.
-
-Nous avons essayé de travailler un peu différemment, en nous appuyant sur les données, pour tenter une approche plus globale. Et plus “data”.
-
-Voici donc le mode d’emploi de cette enquête.
-
-Première étape, **récupérer les données**, la matière première indispensable. En utilisant l’[excellent outil Outwit Hub](https://www.outwit.com/products/hub/), nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).
-
-Nous avons ainsi “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, qui nous a permis de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs. 
-
-[Pour ceux que cela intéresse : le lien vers le script](/img/airBNB.xml).Vous pouvez le réutiliser.  
-
-###Un tableau de 1000 lignes
-
-Au final, nous avons récupéré un tableau de 2000 lignes. Nous avons gardé uniquement les annonces de  Genève et ses environs… soit un petit millier de lignes. Bien sûr, cette “capture” n’est qu’une photographie à un instant T du marché locatif d’Airbnb. Mais à l’inverse d'autres sites d’annonces, le site d’Airbnb ne change pas à un rythme aussi rapide.
-
-Deuxième étape, **nous avons questionné nos données**.
-
-En utilisant un tableur (LibreOffice dans notre cas, ou Excel) via la fonction de tri et surtout via les tableaux croisés dynamiques, nous avons donc pu “interroger” nos données, de la même manière qu’un journaliste interroge une personne interviewée. Nous avons aussi pu obtenir par exemple le profil des locations, le prix médian (90 euros) ou moyen (110 euros). 
-<br><br>
-![](/img/carte1.png)
-<br><br>
-Toujours dans cette logique d’interrogation des données, nous avons tenté de localiser automatiquement les annonces sur une carte, pour voir quels quartiers étaient les plus prisés. Si le site de Airbnb n’indique pas précisément l’adresse, on trouve cependant dans le code HTML les coordonnées précises… qui nous permet donc de localiser toutes nos annonces sur la carte (via Fusion Tables ou CartoDB par exemple). En soit rien de très surprenant, on trouve évidemment une densité très importante d’offres dans le centre ville. 
-
-### Géocodage inversé et cadastre
-
-Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocodage simple, c’est le principe de base de Google : [vous lui donnez une adresse et qu’il la place sur une carte](https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&spell=1). Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). 
-<br><br>
-
-![](/img/carte2.png)
-
-<br><br>
-Dernière question "posée" de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles.  
-
-### Trouver les multi-locataires
-
-Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n'aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et le profil de " Jasmina" qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données [avec le registre foncier de la ville de Genève (le cadastre)](http://ge.ch/extraitfoncier/), nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie "data". 
-
-Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier...
-
------------------
-
-<center><blockquote class="twitter-tweet" lang="fr"><p>Et notre longue enquête sur <a href="https://twitter.com/hashtag/Airbnb?src=hash">#Airbnb</a> à <a href="https://twitter.com/hashtag/Gen%C3%A8ve?src=hash">#Genève</a>. <a href="http://t.co/oZWdPsRLCH">http://t.co/oZWdPsRLCH</a></p>&mdash; Julie Conti (@Julieconti) <a href="https://twitter.com/Julieconti/status/531412156932034560">9 Novembre 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></center>
------------------
-
-
-----------------------
-
-**Jean Abbiateci** (Data Le Temps)
+Ce blog est également bien entendu un lieu d'échanges. N'hésitez pas à nous contacter [par mail](mailto:jean.abbiateci@letemps.ch), sur les réseaux ou via les commentaires de ce blog. 
