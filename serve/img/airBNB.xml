@@ -1,0 +1,271 @@
+<outwitAutomator>
+<documentproperties>
+<active>true</active>
+<url>https://www.airbnb.fr</url>
+<masterId>{4b1cd33f-fb96-47e8-8641-d8a4ac7598b6}</masterId>
+<name>airBNB</name>
+<version>1.0</version>
+<versionId>{4b1cd33f-fb96-47e8-8641-d8a4ac7598b6}</versionId>
+<automatorType>scraper</automatorType>
+<kernelVersion>4.1.0.23</kernelVersion>
+<creationOutfit>OutWit Hub</creationOutfit>
+<author />
+<company />
+<created>2014-11-03T09:53:02+01:00</created>
+<lastModified>2014-11-03T09:53:02+01:00</lastModified>
+<comments />
+<options /><hash>DW6/tdpKKf4s95SR3A7jbA==</hash>
+</documentproperties>
+<data>
+<line>
+<ok>true</ok>
+<description>texte</description>
+<before>  data-name="</before>
+<after>"</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>adresse</description>
+<before>data-address="</before>
+<after>"</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>locality</description>
+<before>airbedandbreakfast:locality" content="</before>
+<after>"&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>pays</description>
+<before>irbedandbreakfast:country" content="</before>
+<after>"&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>commentaires</description>
+<before>&lt;h4 class="row-space-4"&gt;</before>
+<after>commentaire</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>prix</description>
+<before>    &lt;div id="price_amount" itemprop="price" class="pull-left h3 text-special"&gt;</before>
+<after>&amp;euro;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>rating</description>
+<before>&lt;meta property="airbedandbreakfast:rating" content="</before>
+<after>"&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>proprio</description>
+<before> &lt;a href="#host-profile" class="link-reset text-wrap"&gt;</before>
+<after>&lt;/a&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Type de lit : </description>
+<before>&lt;div&gt;Type de lit : &lt;strong&gt;</before>
+<after>&lt;/strong&gt;&lt;/div&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Type de propriété </description>
+<before> &lt;div&gt;Type de propriété : &lt;strong&gt;</before>
+<after>&lt;/strong&gt;&lt;/div&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Capacité d'accueil :</description>
+<before>&lt;div&gt;Capacité d'accueil :</before>
+<after>&lt;/strong&gt;&lt;/div&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Chambres</description>
+<before>  &lt;div&gt;Chambres :</before>
+<after>&lt;/strong&gt;&lt;/div&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Salles de bains</description>
+<before>Salles de bain :</before>
+<after>&lt;/strong&gt;&lt;/div&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Lits </description>
+<before>&lt;div&gt;Lits :</before>
+<after>&lt;/strong&gt;&lt;/div&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>wifi</description>
+<before>                      &lt;i class="icon h3 icon-wi</before>
+<after>"</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>internet</description>
+<before>&lt;i class="icon h3 icon-inter</before>
+<after>"</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>handicap</description>
+<before>&lt;i class="icon h3 icon-acc</before>
+<after>"</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>voyageurs supple</description>
+<before>&lt;div&gt;Voyageur supplémentaire : &lt;strong</before>
+<after>&lt;/span&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>frais menage</description>
+<before>&lt;div&gt;Frais de ménage : &lt;strong&gt;&lt;span id="extras_price_string"&gt;</before>
+<after>&amp;euro</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Caution </description>
+<before>&lt;div&gt;Caution : &lt;strong&gt;&lt;span id="security_deposit_string"&gt;</before>
+<after>&amp;euro</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>reglement</description>
+<before>  Règlement intérieur</before>
+<after>.&lt;/p&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description> Durée minimum du séjour </description>
+<before>Durée minimum du séjour : &lt;strong&gt;3</before>
+<after>&lt;/strong&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Latitude</description>
+<before>&lt;meta property="airbedandbreakfast:location:latitude" content="</before>
+<after>"&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Longitude</description>
+<before>&lt;meta property="airbedandbreakfast:location:longitude" content="</before>
+<after>"&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>iduser</description>
+<before>muscache.com/ic/users/</before>
+<after>/profile_pic/</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+</data>
+</outwitAutomator>

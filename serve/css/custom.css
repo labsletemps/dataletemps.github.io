@@ -1,0 +1,217 @@
+#page {
+  width: 834px;
+  margin: 20px auto;
+  font-family: Georgia;
+}
+img {
+  border:0px;
+}
+
+
+
+.page-header {
+  font-family: Georgia;
+  font-size: 48px;
+  font-weight:300;
+  margin: 0 0 10px 0;
+}
+
+.wf-loading.page-header {
+  visibility: hidden;
+}
+
+.readin {
+  font-family: Georgia;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.wf-loading .readin {
+  visibility:hidden;
+}
+
+.readin a {
+  color: #940026;
+  font-weight: none;
+  font-weight: 200;
+  text-decoration:underline;
+ 
+}
+
+.readin a:hover {
+  color:white;
+  background-color:#940026;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:uppercase;
+}
+
+.letemps-thumb-container {
+  width: 250px;
+  box-shadow: 1px 1px 1px 1px #666;
+  height: 150px;
+  margin: 11px;
+  background-color: #F4F4F4;
+  float: left;
+  display: inline;
+  overflow: hidden;
+  position:relative;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+box-shadow: 1px 1px 1px 1px #999;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.letemps-thumb-container:hover {
+  box-shadow: 1px 1px 1px 1px #940026;
+}
+
+.letemps-thumb-container.first {
+  margin-left:0px;
+}
+.letemps-thumb-container.last {
+  margin-right:0px;
+}
+
+.letemps-link {
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:0;
+  text-decoration: none;
+  padding: 3px 7px;
+}
+
+.letemps-label {
+  position: absolute;
+  top: 85%;
+  background-color: white;
+  background:#F2f2f2;
+  width: 100%;
+  font-family: Georgia;
+  font-size: 12px;
+  font-style: bold;
+  padding: 4px 10px;
+  border-top: 1px dotted #CCC;
+  
+  font-weight: none;
+  color: black;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.letemps-thumb-container:hover .letemps-label {
+  
+  background-color: white;
+  background: rgba(255,255,255,1);
+}
+
+.letemps-thumbnail-image {
+  -moz-border-radius:5px;
+  border-radius-top:5px;
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+
+
+/*clearfix*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+  display: block;     /* resets display for IE/Win */
+}
+
+.recent-letemps-hed {
+  font-family: Georgia;
+  margin-left: 2px;
+  font-weight:100;
+  font-size:16px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #page {
+    width: 350px;
+  }
+
+ 
+  .letemps-thumb-container {
+    width: 162px;
+    margin: 4px;
+  }
+  .page-header {
+    font-size: 37px;
+  }
+  .readin {
+    font-size: 19px;
+    line-height: 1.4em;
+  }
+  .recent-letemps-hed {
+    text-align: center;
+    margin-left: 0;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (device-width: 768px) and (orientation:portrait) {
+  #page {
+    width: 100%;
+  }
+  .letemps-thumb-container {
+    width: 170px;
+  }
+
+  .page-header {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (device-width: 768px) and (orientation:landscape) {
+  #page {
+    width:100%;
+  }
+  .letemps-thumb-container {
+    width:139px;
+    margin:4px;
+  }
+  .page-header {
+    font-size:45px;
+  }
+  .readin {
+    font-size:17px;
+    line-height:1.4em;
+  }
+  .letemps-label {
+    font-size:10px;
+  }
+}
+
+ li {
+ list-style-type: none;
+ display: inline;
+
+
+  }
+
+  li img {
+    opacity:0.8;}
+  li img:hover {
+    opacity:1;}

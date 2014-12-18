@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Data Le Temps</title>
+		<description>Les projets data et multimédias du Temps</description>		
+		<link>http://dataletemps.github.io</link>
+		<atom:link href="http://dataletemps.github.io/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Hydro</title>
+				<description>&lt;meta content='Comment nous avons enquêté avec les données d&amp;apos;Airbnb' property='og:title' /&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/carte.png' /&gt; &lt;br /&gt;&lt;br /&gt; Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste &lt;a href='https://twitter.com/julieconti'&gt;Julie Conti&lt;/a&gt; sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une s&amp;#8217;appuie sur une démarche de datajournalisme.&lt;/p&gt;
+&lt;hr /&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;center&amp;gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; lang=&amp;quot;fr&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/hashtag/Gen%C3%A8ve?src=hash&amp;quot;&amp;gt;#Genève&amp;lt;/a&amp;gt; Quand Airbnb vide les appartements (par &amp;lt;a href=&amp;quot;https://twitter.com/Julieconti&amp;quot;&amp;gt;@Julieconti&amp;lt;/a&amp;gt;) &amp;lt;a href=&amp;quot;http://t.co/RfsNSJAQWn&amp;quot;&amp;gt;http://t.co/RfsNSJAQWn&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;http://t.co/DHXI07JxOt&amp;quot;&amp;gt;pic.twitter.com/DHXI07JxOt&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Data Le Temps (@DataLeTemps) &amp;lt;a href=&amp;quot;https://twitter.com/DataLeTemps/status/531404948488347648&amp;quot;&amp;gt;9 Novembre 2014&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/center&amp;gt;&lt;/pre&gt;&lt;hr /&gt;
+&lt;h3 id='du_journalisme_de_donnes'&gt;Du journalisme de données&lt;/h3&gt;
+
+&lt;p&gt;Tout est parti d’un questionnement.&lt;/p&gt;
+
+&lt;p&gt;Dans de nombreuses grandes villes - Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site &amp;#8220;cool&amp;#8221; de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ?&lt;/p&gt;
+
+&lt;p&gt;Pour répondre à ces questions, nous aurions pu, en surfant sur le site, en lisant les commentaires, aller récupérer des informations et des témoignages au cas par cas.&lt;/p&gt;
+
+&lt;p&gt;Nous avons essayé de travailler un peu différemment, en nous appuyant sur les données, pour tenter une approche plus globale. Et plus “data”.&lt;/p&gt;
+
+&lt;p&gt;Voici donc le mode d’emploi de cette enquête.&lt;/p&gt;
+
+&lt;p&gt;Première étape, &lt;strong&gt;récupérer les données&lt;/strong&gt;, la matière première indispensable. En utilisant l’&lt;a href='https://www.outwit.com/products/hub/'&gt;excellent outil Outwit Hub&lt;/a&gt;, nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).&lt;/p&gt;
+
+&lt;p&gt;Nous avons ainsi “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, qui nous a permis de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='/img/airBNB.xml'&gt;Pour ceux que cela intéresse : le lien vers le script&lt;/a&gt;.Vous pouvez le réutiliser.&lt;/p&gt;
+
+&lt;h3 id='un_tableau_de_1000_lignes'&gt;Un tableau de 1000 lignes&lt;/h3&gt;
+
+&lt;p&gt;Au final, nous avons récupéré un tableau de 2000 lignes. Nous avons gardé uniquement les annonces de Genève et ses environs… soit un petit millier de lignes. Bien sûr, cette “capture” n’est qu’une photographie à un instant T du marché locatif d’Airbnb. Mais à l’inverse d&amp;#8217;autres sites d’annonces, le site d’Airbnb ne change pas à un rythme aussi rapide.&lt;/p&gt;
+
+&lt;p&gt;Deuxième étape, &lt;strong&gt;nous avons questionné nos données&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En utilisant un tableur (LibreOffice dans notre cas, ou Excel) via la fonction de tri et surtout via les tableaux croisés dynamiques, nous avons donc pu “interroger” nos données, de la même manière qu’un journaliste interroge une personne interviewée. Nous avons aussi pu obtenir par exemple le profil des locations, le prix médian (90 euros) ou moyen (110 euros). &lt;br /&gt;&lt;br /&gt; &lt;img alt='' src='/img/carte1.png' /&gt; &lt;br /&gt;&lt;br /&gt; Toujours dans cette logique d’interrogation des données, nous avons tenté de localiser automatiquement les annonces sur une carte, pour voir quels quartiers étaient les plus prisés. Si le site de Airbnb n’indique pas précisément l’adresse, on trouve cependant dans le code HTML les coordonnées précises… qui nous permet donc de localiser toutes nos annonces sur la carte (via Fusion Tables ou CartoDB par exemple). En soit rien de très surprenant, on trouve évidemment une densité très importante d’offres dans le centre ville.&lt;/p&gt;
+
+&lt;h3 id='gocodage_invers_et_cadastre'&gt;Géocodage inversé et cadastre&lt;/h3&gt;
+
+&lt;p&gt;Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocodage simple, c’est le principe de base de Google : &lt;a href='https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;amp;spell=1'&gt;vous lui donnez une adresse et qu’il la place sur une carte&lt;/a&gt;. Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='/img/carte2.png' /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Dernière question &amp;#8220;posée&amp;#8221; de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles.&lt;/p&gt;
+
+&lt;h3 id='trouver_les_multilocataires'&gt;Trouver les multi-locataires&lt;/h3&gt;
+
+&lt;p&gt;Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n&amp;#8217;aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et le profil de &amp;#8221; Jasmina&amp;#8221; qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données &lt;a href='http://ge.ch/extraitfoncier/'&gt;avec le registre foncier de la ville de Genève (le cadastre)&lt;/a&gt;, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie &amp;#8220;data&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier&amp;#8230;&lt;/p&gt;
+&lt;hr /&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;center&amp;gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; lang=&amp;quot;fr&amp;quot;&amp;gt;&amp;lt;p&amp;gt;Et notre longue enquête sur &amp;lt;a href=&amp;quot;https://twitter.com/hashtag/Airbnb?src=hash&amp;quot;&amp;gt;#Airbnb&amp;lt;/a&amp;gt; à &amp;lt;a href=&amp;quot;https://twitter.com/hashtag/Gen%C3%A8ve?src=hash&amp;quot;&amp;gt;#Genève&amp;lt;/a&amp;gt;. &amp;lt;a href=&amp;quot;http://t.co/oZWdPsRLCH&amp;quot;&amp;gt;http://t.co/oZWdPsRLCH&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Julie Conti (@Julieconti) &amp;lt;a href=&amp;quot;https://twitter.com/Julieconti/status/531412156932034560&amp;quot;&amp;gt;9 Novembre 2014&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/center&amp;gt;&lt;/pre&gt;&lt;hr /&gt;&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Jean Abbiateci&lt;/strong&gt; (Data Le Temps)&lt;/p&gt;</description>
+				<pubDate>Mon, 15 Dec 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/12/15/hydro.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/12/15/hydro.html</guid>
+			</item>
+		
+			<item>
+				<title>Milliardaires de Cologny - comment nous avons utilisé les données du cadastre</title>
+				<description>&lt;p&gt;&lt;img alt='carte' src='/img/une.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Le Temps a publié hier, sous la plume de Mehdi Atmani, Jean Abbiateci et Olivier Francey, une grande enquête sur la commune genevoise de Cologny intitulée &amp;#8220;Le paradis perdu des forfaitaires&amp;#8221;. Ce travail a donné lieu à une publication “papier” - une double page dans le Temps - ainsi qu&amp;#8217;un long format multimédia sur le site web.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://www.letemps.ch/interactive/2014/cologny/'&gt;&amp;#8614; Cliquez ici pour lire notre long format multimédia&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Comme notre enquête précédente (&lt;a href='http://dataletemps.github.io/2014/11/09/airbnb.html'&gt;lire le making-of de notre enquête sur Airbnb&lt;/a&gt;), cette investigation s&amp;#8217;appuie aussi sur une démarche de datajournalisme.&lt;/p&gt;
+
+&lt;p&gt;Voici comment nous avons procédé et quelles ont été nos difficultés et nos réflexions.&lt;/p&gt;
+
+&lt;h3 id='cologny_le_paradis_perdu_des_milliardaires'&gt;Cologny, le paradis perdu des milliardaires&lt;/h3&gt;
+
+&lt;p&gt;L&amp;#8217;actualité tout d&amp;#8217;abord: les Suisses se prononceront le 30 novembre sur l’abolition ou non des forfaits fiscaux, un régime fiscal préférentiel qui permet notamment aux riches étrangers de bénéficier d&amp;#8217;un taux d&amp;#8217;imposition relativement bas et attractif.&lt;/p&gt;
+
+&lt;p&gt;En marge de ce rendez-vous électoral, nous avons voulu faire un éclairage sur Cologny, qui compte plusieurs milliardaires étrangers et qui cristallise souvent les imaginaires avec ses émirs saoudiens ou ses tycoons russes.&lt;/p&gt;
+
+&lt;p&gt;Notre enquête s&amp;#8217;intéresse donc aux riches étrangers de Cologny, à leur organisation, à leurs activités économiques, et leur départ possible ou non de la commune en cas de votation favorable. Sachant que la Suisse perdait déjà depuis assez longtemps son statut d&amp;#8217;eldorado fiscal au profit d&amp;#8217;autres destinations comme Dubaï ou Londres.&lt;/p&gt;
+
+&lt;h3 id='notre_base_de_donnes_principale__le_cadastre'&gt;Notre base de données principale : le cadastre&lt;/h3&gt;
+
+&lt;p&gt;Malheureusement, ces étrangers de Cologny sont souvent aussi riches que discrets. Pour mener cette enquête, nous sommes donc partis d&amp;#8217;une base de données : le registre foncier, c&amp;#8217;est à dire le cadastre de Colony. Dès le début de ce projet, nous savions que nous voulions articuler ce travail de datajournalisme, avec du reportage de terrain et de l&amp;#8217;enquête “à l&amp;#8217;ancienne”.&lt;/p&gt;
+
+&lt;p&gt;Quel fut le &lt;i&gt;modus operandi&lt;/i&gt; de ce projet ?&lt;/p&gt;
+
+&lt;p&gt;Nous avons d’abord récupéré, avec l’aide d’un script informatique, les (&lt;a href='http://ge.ch/extraitfoncier/'&gt;données publiques du registre foncier&lt;/a&gt;) disponibles sur le site de l’Etat de Genève. Ces données sont publiques et accessibles à tous. Nous avons utilisé le logiciel Outwit pour cela.&lt;/p&gt;
+
+&lt;p&gt;Vous pouvez voir ci-dessous le modèle d&amp;#8217;une fiche (nous avons nlevé le nom et la date de naissance). Les données du cadastre contiennent à la fois des données très précises (biens immobiliers, date de naissance) mais aucune sur la nationalité ou la profession des propriétaires. Et bien évidemment, le statut fiscal (au forfait ou pas) n&amp;#8217;est pas, logiquement, mentionné.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='carte' src='/img/une1.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Avec ce “scraping”, nous avons récupéré un tableau de plusieurs milliers de ligne, pour résumé tous les propriétaires de Cologny. Il nous fallait dans ce tableau, trouver un moyen d&amp;#8217;identifier comment isoler les plus personnes riches qui nous intéressaient. Et pour des raisons de temps et de ressources humaines, nous avons fait un choix.&lt;/p&gt;
+
+&lt;h3 id='notre_choix__villas_et_terrains_de_plus_de_1500m2'&gt;Notre choix : villas et terrains de plus de 1500m2&lt;/h3&gt;
+
+&lt;p&gt;Nous avons commencé par nous concentrer sur les maisons individuelles, les villas. Et nous avons choisi de ne garder que les terrains de plus de 1500 m2. Bien évidemment, ce choix est subjectif : on peut être milliardaire dans un studio. Ou inversement, vivre dans un immense domaine en étant pauvre. Peut-être Bill Gates a-t-il un appartement à Cologny et nous l&amp;#8217;avons “raté”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='carte' src='http://www.letemps.ch/interactive/2014/cologny/assets/img/col1.jpg
+' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Avec ce choix (villas sur un terrain de + de 1500 m2), nous avions donc à disposition une base de données d&amp;#8217;environ 500 propriétaires, suisses et étrangers.&lt;/p&gt;
+
+&lt;p&gt;C&amp;#8217;est là que le travail le plus difficile a commencé&amp;#8230;&lt;/p&gt;
+
+&lt;h3 id='de_la_difficult_de_croiser_les_bases_de_donnes'&gt;De la difficulté de croiser les bases de données&lt;/h3&gt;
+
+&lt;p&gt;Ces données, il a fallu les enrichir. Nous avons donc cherché, ligne par ligne, la nationalité, l’origine de la fortune et la date d’arrivée dans la commune de chaque propriétaire, ainsi que son activité professionnelle.&lt;/p&gt;
+
+&lt;p&gt;Nous avions pour nous aider plusieurs bases de données à disposition, dans lesquelles nous avons pioché.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Zefix, la base de données du commerce suisse&lt;/li&gt;
+
+&lt;li&gt;Teledata, un site payant qui lui aussi regroupe plusieurs base de données&lt;/li&gt;
+
+&lt;li&gt;Opencorporate, une base de données ouverte sur les entreprises du monde entier&lt;/li&gt;
+
+&lt;li&gt;Linkedin, le réseau social professionnel (pour recouper des informations)&lt;/li&gt;
+
+&lt;li&gt;La recherche Google, sans doute l&amp;#8217;outil le plus efficace au final (là aussi pour recouper les informations)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Au début, nous avons pensé que nous pourrions automatiser ce travail. Peine perdue : une multitude de situations nous ont empêché de le faire.&lt;/p&gt;
+
+&lt;p&gt;Tout d&amp;#8217;abord, une grande partie des propriétés sont enregistrées au nom de l&amp;#8217;épouse (nous avons par exemple échoué à identifier le propriétaire réel de l&amp;#8217;une des plus grandes proprietés de Cologny installé tout récemment).&lt;/p&gt;
+
+&lt;p&gt;Ensuite, il y a une série de cas précis qui rendent ce croisement de données automatique impossible : les couples divorcés, les remariages, les noms de jeune fille, les noms composés, les fratries, les maisons enregistrées au nom des enfants (souvent de cadeaux), les propriétaires décédés, les orthographes différentes&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='carte' src='/img/une2.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Au final, nous avons donc du croiser ces données &amp;#8220;à la main&amp;#8221;. Et autant les informations sur les “grands propriétaires” sont très faciles d’accès, autant à l’inverse, les “petits” ne sont référencés nulle part.&lt;/p&gt;
+
+&lt;h3 id='quand_le_journalisme_traditionnel_prend_le_relais'&gt;Quand le journalisme &amp;#8220;traditionnel&amp;#8221; prend le relais&lt;/h3&gt;
+
+&lt;p&gt;Nous avons tout de même constitué notre base de données enrichie par nos soins, 200 riches étrangers que nous avons pu regrouper par nationalité, secteur d’activité et date d’arrivée (on note ainsi plusieurs vagues d’implantation depuis l’après-guerre). Plusieurs tableaux croisés dynamiques dans notre tableur nous ont permis de construire notre infographie publiée dans le journal et sur le site du Temps.&lt;/p&gt;
+
+&lt;p&gt;Pour finir, les données publiques de la “Feuille d’avis officielle” (FAO) de Genève nous ont permis de connaître les noms et l’adresse des acheteurs, ainsi que des vendeurs de propriétés depuis 2012, avec le montant et la date de la transaction. Notre base de données ainsi complète, nous nous sommes rendus sur le terrain avec des techniques de journalisme plus traditionnelles. Ce fut d&amp;#8217;ailleurs le plus gros du travail, interroger des promoteurs, des avocats, des politiques, qui puissent nous raconter et nous expliquer ce que nous avions pu percevoir grâce à ce travail de &amp;#8220;datajournalistes&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Un mot important pour finir : ces données contiennent, comme nous l&amp;#8217;écrivions plus haut, les adresses précises de chaque résident. Nous les avons utilisées en interne pour notre enquête, de même que les dates de naissance. Mais nous avons choisi de ne jamais les publier.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://www.letemps.ch/interactive/2014/cologny/'&gt;Le résultat de cette enquête est à lire ici.&lt;/a&gt;&lt;/p&gt;</description>
+				<pubDate>Sat, 15 Nov 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/11/15/cologny.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/15/cologny.html</guid>
+			</item>
+		
+			<item>
+				<title>Comment nous avons enquêté avec les données d'Airbnb</title>
+				<description>&lt;meta content='Comment nous avons enquêté avec les données d&amp;apos;Airbnb' property='og:title' /&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/carte.png' /&gt; &lt;br /&gt;&lt;br /&gt; Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste &lt;a href='https://twitter.com/julieconti'&gt;Julie Conti&lt;/a&gt; sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une s&amp;#8217;appuie sur une démarche de datajournalisme.&lt;/p&gt;
+&lt;hr /&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;center&amp;gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; lang=&amp;quot;fr&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;https://twitter.com/hashtag/Gen%C3%A8ve?src=hash&amp;quot;&amp;gt;#Genève&amp;lt;/a&amp;gt; Quand Airbnb vide les appartements (par &amp;lt;a href=&amp;quot;https://twitter.com/Julieconti&amp;quot;&amp;gt;@Julieconti&amp;lt;/a&amp;gt;) &amp;lt;a href=&amp;quot;http://t.co/RfsNSJAQWn&amp;quot;&amp;gt;http://t.co/RfsNSJAQWn&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;http://t.co/DHXI07JxOt&amp;quot;&amp;gt;pic.twitter.com/DHXI07JxOt&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Data Le Temps (@DataLeTemps) &amp;lt;a href=&amp;quot;https://twitter.com/DataLeTemps/status/531404948488347648&amp;quot;&amp;gt;9 Novembre 2014&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/center&amp;gt;&lt;/pre&gt;&lt;hr /&gt;
+&lt;h3 id='du_journalisme_de_donnes'&gt;Du journalisme de données&lt;/h3&gt;
+
+&lt;p&gt;Tout est parti d’un questionnement.&lt;/p&gt;
+
+&lt;p&gt;Dans de nombreuses grandes villes - Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site &amp;#8220;cool&amp;#8221; de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ?&lt;/p&gt;
+
+&lt;p&gt;Pour répondre à ces questions, nous aurions pu, en surfant sur le site, en lisant les commentaires, aller récupérer des informations et des témoignages au cas par cas.&lt;/p&gt;
+
+&lt;p&gt;Nous avons essayé de travailler un peu différemment, en nous appuyant sur les données, pour tenter une approche plus globale. Et plus “data”.&lt;/p&gt;
+
+&lt;p&gt;Voici donc le mode d’emploi de cette enquête.&lt;/p&gt;
+
+&lt;p&gt;Première étape, &lt;strong&gt;récupérer les données&lt;/strong&gt;, la matière première indispensable. En utilisant l’&lt;a href='https://www.outwit.com/products/hub/'&gt;excellent outil Outwit Hub&lt;/a&gt;, nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).&lt;/p&gt;
+
+&lt;p&gt;Nous avons ainsi “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, qui nous a permis de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='/img/airBNB.xml'&gt;Pour ceux que cela intéresse : le lien vers le script&lt;/a&gt;.Vous pouvez le réutiliser.&lt;/p&gt;
+
+&lt;h3 id='un_tableau_de_1000_lignes'&gt;Un tableau de 1000 lignes&lt;/h3&gt;
+
+&lt;p&gt;Au final, nous avons récupéré un tableau de 2000 lignes. Nous avons gardé uniquement les annonces de Genève et ses environs… soit un petit millier de lignes. Bien sûr, cette “capture” n’est qu’une photographie à un instant T du marché locatif d’Airbnb. Mais à l’inverse d&amp;#8217;autres sites d’annonces, le site d’Airbnb ne change pas à un rythme aussi rapide.&lt;/p&gt;
+
+&lt;p&gt;Deuxième étape, &lt;strong&gt;nous avons questionné nos données&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En utilisant un tableur (LibreOffice dans notre cas, ou Excel) via la fonction de tri et surtout via les tableaux croisés dynamiques, nous avons donc pu “interroger” nos données, de la même manière qu’un journaliste interroge une personne interviewée. Nous avons aussi pu obtenir par exemple le profil des locations, le prix médian (90 euros) ou moyen (110 euros). &lt;br /&gt;&lt;br /&gt; &lt;img alt='' src='/img/carte1.png' /&gt; &lt;br /&gt;&lt;br /&gt; Toujours dans cette logique d’interrogation des données, nous avons tenté de localiser automatiquement les annonces sur une carte, pour voir quels quartiers étaient les plus prisés. Si le site de Airbnb n’indique pas précisément l’adresse, on trouve cependant dans le code HTML les coordonnées précises… qui nous permet donc de localiser toutes nos annonces sur la carte (via Fusion Tables ou CartoDB par exemple). En soit rien de très surprenant, on trouve évidemment une densité très importante d’offres dans le centre ville.&lt;/p&gt;
+
+&lt;h3 id='gocodage_invers_et_cadastre'&gt;Géocodage inversé et cadastre&lt;/h3&gt;
+
+&lt;p&gt;Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocodage simple, c’est le principe de base de Google : &lt;a href='https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;amp;spell=1'&gt;vous lui donnez une adresse et qu’il la place sur une carte&lt;/a&gt;. Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='' src='/img/carte2.png' /&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Dernière question &amp;#8220;posée&amp;#8221; de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles.&lt;/p&gt;
+
+&lt;h3 id='trouver_les_multilocataires'&gt;Trouver les multi-locataires&lt;/h3&gt;
+
+&lt;p&gt;Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n&amp;#8217;aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et le profil de &amp;#8221; Jasmina&amp;#8221; qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données &lt;a href='http://ge.ch/extraitfoncier/'&gt;avec le registre foncier de la ville de Genève (le cadastre)&lt;/a&gt;, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie &amp;#8220;data&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier&amp;#8230;&lt;/p&gt;
+&lt;hr /&gt;&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;center&amp;gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; lang=&amp;quot;fr&amp;quot;&amp;gt;&amp;lt;p&amp;gt;Et notre longue enquête sur &amp;lt;a href=&amp;quot;https://twitter.com/hashtag/Airbnb?src=hash&amp;quot;&amp;gt;#Airbnb&amp;lt;/a&amp;gt; à &amp;lt;a href=&amp;quot;https://twitter.com/hashtag/Gen%C3%A8ve?src=hash&amp;quot;&amp;gt;#Genève&amp;lt;/a&amp;gt;. &amp;lt;a href=&amp;quot;http://t.co/oZWdPsRLCH&amp;quot;&amp;gt;http://t.co/oZWdPsRLCH&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Julie Conti (@Julieconti) &amp;lt;a href=&amp;quot;https://twitter.com/Julieconti/status/531412156932034560&amp;quot;&amp;gt;9 Novembre 2014&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;/center&amp;gt;&lt;/pre&gt;&lt;hr /&gt;&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Jean Abbiateci&lt;/strong&gt; (Data Le Temps)&lt;/p&gt;</description>
+				<pubDate>Sun, 09 Nov 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/11/09/airbnb.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/09/airbnb.html</guid>
+			</item>
+		
+			<item>
+				<title>Bienvenue sur notre blog Data Le Temps</title>
+				<description>&lt;p&gt;&lt;img alt='carte' src='/img/propos.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Vous êtes ici sur le tout nouveau blog tenu par l&amp;#8217;équipe Data Le Temps. Bienvenue.&lt;/p&gt;
+
+&lt;p&gt;Chaque semaine, le Temps et son équipe Data publie des applications interactives, des grands formats multimédias et des enquêtes utilisant les données. Nous avons choisi de raconter sur ce blog la manière dont certaines de ces applications sont conçues et la façon dont nous travaillons.&lt;/p&gt;
+
+&lt;h3 id='code_et_mode_demploi'&gt;Code et mode d&amp;#8217;emploi&lt;/h3&gt;
+
+&lt;p&gt;Nous partagerons ici :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Notre code.&lt;/strong&gt; Nos applications interactives, nos &lt;em&gt;newsapps&lt;/em&gt;, sont écrites avec du texte et des images mais aussi avec du html, du css, du javascript, du python&amp;#8230; Sans compter le recours à des litres de café et à des cachets d&amp;#8217;aspirine pour le mal de tête. Notre code est développé pour nos propres projets ou nos propres outils, et souvent dans l&amp;#8217;urgence. Il est parfois écrit parfois un peu &amp;#8220;à l&amp;#8217;arrache&amp;#8221;. Mais si ce code peut vous aider, nous en sommes ravis et vous voulez y jeter un oeil ou piocher dedans. Ce que nous faisons nous-même très souvent dans le code des nos confrères qui sont dans cette même démarche de journalisme ouvert et open source.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nos méthodes de travail.&lt;/strong&gt; Nous avons choisi de raconter ici comment nous travaillons, par souci de transparence et par souci de partage. Nous parlerons ici des dessous de nos enquêtes, des difficultés que nous rencontrons, des nos choix et de nos erreurs. Nous publions dans la plupart des cas nos données.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Notre veille.&lt;/strong&gt; Nous partageons sur Facebook et Twitter notre veille sur les projets des autres et les meilleurs outils existants, parce que là aussi, nous profitons de la veille de la communauté (si vous êtes sur Twitter, ça se passe sur le hastag #ddj). Vous pouvez nous suivre &lt;a href='http://www.twitter.com/dataletemps'&gt;sur notre compte Twitter&lt;/a&gt; et également &lt;a href='https://www.facebook.com/pages/Data-Le-Temps/703519386397933?fref=ts'&gt;sur notre page Facebook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ce blog est également bien entendu un lieu d&amp;#8217;échanges. N&amp;#8217;hésitez pas à nous contacter &lt;a href='mailto:jean.abbiateci@letemps.ch'&gt;par mail&lt;/a&gt;, sur les réseaux ou via les commentaires de ce blog.&lt;/p&gt;</description>
+				<pubDate>Sat, 01 Nov 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/11/01/welcome.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/01/welcome.html</guid>
+			</item>
+		
+	</channel>
+</rss>

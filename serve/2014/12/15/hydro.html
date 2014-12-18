@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Hydro </title>
+		<!-- For responsive site
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="author" href="/humans.txt">
+		<meta property="og:title" content="Hydro" />
+<meta property="og:description" content="A lire sur le blog des projets data et multimédias du Temps" />
+	
+		<link rel="stylesheet" href="/css/style.css">
+		<!--[if IE 7]>
+			<html class="ie7"> 
+			<link rel="stylesheet" type="text/css" href="/css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!--[if IE 8]><html class="ie8"> <![endif]-->		
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="http://www.letemps.ch/r/SysConfig/WebPortal/letemps/image/favicon/favicon.ico">	    
+	</head>
+	<body>
+	<!-- Header
+	    ================================================== -->
+	<header>
+
+	</header>
+
+	<link rel="alternate" type="application/rss+xml" title="Data Le Temps" href="http://dataletemps.github.io/feed.xml">
+<div class="top-strip"></div>
+<main class="content">
+    <section class="container">
+    	<div class="row-fluid">
+    		<article class="home-icon">
+				<a href="/">
+				 		  <img src="/img/log.png" width="295"/>
+          
+				</a><hr>
+			</article>
+			<article class="post">
+				<h5>15 December 2014</h5><br>
+				<h2 class="content">Hydro</h2>
+				<section>
+					<meta content='Comment nous avons enquêté avec les données d&apos;Airbnb' property='og:title' />
+<p><img alt='carte' src='/img/carte.png' /> <br /><br /> Demain et dès à présent sur le site web du Temps, vous pourrez lire une enquête de notre journaliste <a href='https://twitter.com/julieconti'>Julie Conti</a> sur Airbnb à Genève. L’article s’intéresse à cette plate-forme de location de logements fondée en 2008 par des Américains, et qui connaît un immense succès dans le monde entier. Et cette enquête contient une s&#8217;appuie sur une démarche de datajournalisme.</p>
+<hr /><pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;center&gt;&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/hashtag/Gen%C3%A8ve?src=hash&quot;&gt;#Genève&lt;/a&gt; Quand Airbnb vide les appartements (par &lt;a href=&quot;https://twitter.com/Julieconti&quot;&gt;@Julieconti&lt;/a&gt;) &lt;a href=&quot;http://t.co/RfsNSJAQWn&quot;&gt;http://t.co/RfsNSJAQWn&lt;/a&gt; &lt;a href=&quot;http://t.co/DHXI07JxOt&quot;&gt;pic.twitter.com/DHXI07JxOt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Data Le Temps (@DataLeTemps) &lt;a href=&quot;https://twitter.com/DataLeTemps/status/531404948488347648&quot;&gt;9 Novembre 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/center&gt;</pre><hr />
+<h3 id='du_journalisme_de_donnes'>Du journalisme de données</h3>
+
+<p>Tout est parti d’un questionnement.</p>
+
+<p>Dans de nombreuses grandes villes - Paris, New-York, Berlin - Airbnb est accusé de confisquer le marché locatif. Et qu’en est-il à Genève ? Les résidences principales mises en location sur Airbnb le sont-elles réellement ? Airbnb est-il encore ce site &#8220;cool&#8221; de partage de bons plans entre particuliers ou a-t-il été en main par des intermédiaires ou des acteurs professionnels ?</p>
+
+<p>Pour répondre à ces questions, nous aurions pu, en surfant sur le site, en lisant les commentaires, aller récupérer des informations et des témoignages au cas par cas.</p>
+
+<p>Nous avons essayé de travailler un peu différemment, en nous appuyant sur les données, pour tenter une approche plus globale. Et plus “data”.</p>
+
+<p>Voici donc le mode d’emploi de cette enquête.</p>
+
+<p>Première étape, <strong>récupérer les données</strong>, la matière première indispensable. En utilisant l’<a href='https://www.outwit.com/products/hub/'>excellent outil Outwit Hub</a>, nous avons commencé par “scraper”, c’est à dire aspirer sur le site Airbnb les quelques 2000 annonces publiées sur Genève et ses environs (notamment en France voisine).</p>
+
+<p>Nous avons ainsi “programmé” un petit robot sous la forme d’un petit bout de code, un extracteur, qui nous a permis de récupérer les informations qui nous intéressaient (prix, profil du locataire, notation, nombre de chambres…) sur l’une des pages de AirBn. Nous avons appliqué automatiquement notre extracteur à l’ensemble des fiches concernant les annonces de Genève et des environs.</p>
+
+<p><a href='/img/airBNB.xml'>Pour ceux que cela intéresse : le lien vers le script</a>.Vous pouvez le réutiliser.</p>
+
+<h3 id='un_tableau_de_1000_lignes'>Un tableau de 1000 lignes</h3>
+
+<p>Au final, nous avons récupéré un tableau de 2000 lignes. Nous avons gardé uniquement les annonces de Genève et ses environs… soit un petit millier de lignes. Bien sûr, cette “capture” n’est qu’une photographie à un instant T du marché locatif d’Airbnb. Mais à l’inverse d&#8217;autres sites d’annonces, le site d’Airbnb ne change pas à un rythme aussi rapide.</p>
+
+<p>Deuxième étape, <strong>nous avons questionné nos données</strong>.</p>
+
+<p>En utilisant un tableur (LibreOffice dans notre cas, ou Excel) via la fonction de tri et surtout via les tableaux croisés dynamiques, nous avons donc pu “interroger” nos données, de la même manière qu’un journaliste interroge une personne interviewée. Nous avons aussi pu obtenir par exemple le profil des locations, le prix médian (90 euros) ou moyen (110 euros). <br /><br /> <img alt='' src='/img/carte1.png' /> <br /><br /> Toujours dans cette logique d’interrogation des données, nous avons tenté de localiser automatiquement les annonces sur une carte, pour voir quels quartiers étaient les plus prisés. Si le site de Airbnb n’indique pas précisément l’adresse, on trouve cependant dans le code HTML les coordonnées précises… qui nous permet donc de localiser toutes nos annonces sur la carte (via Fusion Tables ou CartoDB par exemple). En soit rien de très surprenant, on trouve évidemment une densité très importante d’offres dans le centre ville.</p>
+
+<h3 id='gocodage_invers_et_cadastre'>Géocodage inversé et cadastre</h3>
+
+<p>Nous avons ensuite utilisé le système du “Geocodage Inversé” pour retrouver les adresses précises. Là aussi, un petit mot d’explication. Le géocodage simple, c’est le principe de base de Google : <a href='https://www.google.fr/?gws_rd=ssl#q=rue+de+lyon+23+geneve&amp;spell=1'>vous lui donnez une adresse et qu’il la place sur une carte</a>. Eh bien, le géocodage inversé, c’est le contraire : cela permet d’entrer une latitude et une longitude (ex : 46.208574, 6.136784) pour retrouver l’adresse (ex: 23 rue de Lyon, Genève). <br /><br /></p>
+
+<p><img alt='' src='/img/carte2.png' /></p>
+<br />
+<p>Dernière question &#8220;posée&#8221; de nos données : l’analyse du profil des propriétaires. Sur les 753 propriétaires qui se répartissent le marché Airbnb sur Genève, une centaine louent plusieurs domiciles.</p>
+
+<h3 id='trouver_les_multilocataires'>Trouver les multi-locataires</h3>
+
+<p>Deux cas très saillants sont ressortis immédiatement dans Excel, que nous n&#8217;aurions jamais pu identifier sans ce travail : un certain Dimitri (en fait une société) qui propose une petite vingtaine d’annonces et le profil de &#8221; Jasmina&#8221; qui “gère” pas moins de 38 offres sur le grand Genève et 87 sur toute la Suisse. En utilisant de manière agile la recherche Google ou en croisant nos données <a href='http://ge.ch/extraitfoncier/'>avec le registre foncier de la ville de Genève (le cadastre)</a>, nous avons pu identifier les propriétaires qui nous intéressaient et nous avons réussi à retrouver le véritable nom de ces deux personnes et leurs coordonnées. Nous les avons ensuite contactées au téléphone. Et c’est là que la partie du journalisme traditionnel prend le relais sur la partie &#8220;data&#8221;.</p>
+
+<p>Et si la suite vous intéresse, c’est à lire dans le papier de Julie Conti et demain dans la version papier&#8230;</p>
+<hr /><pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;center&gt;&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;fr&quot;&gt;&lt;p&gt;Et notre longue enquête sur &lt;a href=&quot;https://twitter.com/hashtag/Airbnb?src=hash&quot;&gt;#Airbnb&lt;/a&gt; à &lt;a href=&quot;https://twitter.com/hashtag/Gen%C3%A8ve?src=hash&quot;&gt;#Genève&lt;/a&gt;. &lt;a href=&quot;http://t.co/oZWdPsRLCH&quot;&gt;http://t.co/oZWdPsRLCH&lt;/a&gt;&lt;/p&gt;&amp;mdash; Julie Conti (@Julieconti) &lt;a href=&quot;https://twitter.com/Julieconti/status/531412156932034560&quot;&gt;9 Novembre 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/center&gt;</pre><hr /><hr />
+<p><strong>Jean Abbiateci</strong> (Data Le Temps)</p>
+					<hr>
+
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dataletemps'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</section>
+				<section style="font-weight:bold; margin-bottom: 2em;">
+					 
+							<a rel="prev" class="a-hover"href="/2014/11/15/cologny.html"><i class="icon-double-angle-left"></i> Milliardaires de Cologny - comment nous avons utilisé les données du cadastre</a>
+						
+						
+				</section><br><br>
+			</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</section>
+</main>
+<!-- STATS -->
+<script type="text/javascript">
+ 
+<!--
+xtnv = document;                                          //parent.document or top.document or document        
+xtsd = "http://logi118";
+xtsite = "452804";
+xtn2 = "20";                                       // level 2 site ID
+xtpage = "dataletemps::blog::article::-2014-12-15-hydro.html";                                                   //page name (with the use of :: to create chapters)
+xtdi = "";                                                                            //implication degree
+xt_multc = "&x6=1";                                                                                    //all the xi indicators (like "&x1=...&x2=....&x3=...")
+xt_an = "232564";                                                                         
+xt_ac = "";
+//do not modify below
+if (window.xtparam!=null){window.xtparam+=xt_multc+"&ac="+xt_ac+"&an="+xt_an;}
+else{window.xtparam=xt_multc+"&ac="+xt_ac+"&an="+xt_an;};
+//-->
+</script>
+<script type="text/javascript" src="http://www.letemps.ch/r/SysConfig/WebPortal/letemps/js/xtcore.js"></script>
+ 
+<noscript>
+<img width="1" height="1" src="http://logi118.xiti.com/hit.xiti?s=452804&s2=20&p=dataletemps::blog::article::-2014-12-15-hydro.html&di=x&an=&ac=" >
+</noscript>
+<!-- END NEW XITI -->
+ 
+<!-- NEW WEMF TAG VERSION="1.4" -->
+<script language="JavaScript" type="text/javascript"> <!--
+                var WEMF="http://letemps.wemfbox.ch/cgi-bin/ivw/CP/dataletemps";
+                document.write("<img src=\""+WEMF+"?r="+escape(document.referrer)+"&d="+(Math.random()*100000)+"\"width=\"1\" height=\"1\" alt=\"\" />");
+// --></script>
+<noscript>
+                <img src="http://letemps.wemfbox.ch/cgi-bin/ivw/CP/dataletemps" width="1" height="1" alt="" />
+</noscript>
+<!-- END NEW WEMF TAG -->
+<!-- SZMFRABO VERSION="1.1" -->
+<script language="Javascript">var szmvars="letemps//CP//dataletemps";</script>
+<script language="Javascript" src="http://letemps.wemfbox.ch/2004/01/survey.js"></script>
+<!-- /SZMFRABO -->
+<!-- /STATS -->
+
+	<footer>
+	
+	</footer>
+
+	<!-- Footer
+	    ================================================== -->
+
+	<!-- Javascripts 
+	    ================================================= -->
+	<script src="/js/jq1uery.min.js"></script>
+	<script src="/js/custom.js"></script>
+
+    <!-- Analytics
+    ================================================== -->
+  
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56555674-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+ 
+
+
+
+
+	</body>
+</html>
