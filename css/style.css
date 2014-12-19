@@ -12,7 +12,9 @@ audio:not([controls]) {
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;
+
+    
 }
 a:focus {
     outline: thin dotted #333;3
@@ -78,11 +80,13 @@ textarea {
 }
 body {
     margin: 0;
-    font-family: Droid serif;
+    font-family: georgia;
     font-size: 15px;
     line-height: 20px;
     color: #333;
-    background-color: #fff
+    background-color: #fff;
+
+
 }
 a {
     color:#950728;
