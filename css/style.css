@@ -1780,7 +1780,7 @@ main.container, main.content>.container {
     min-height: 58em
 }
 .content h1 {
-    font-family: Droid serif, "Times New Roman", Times, serif;
+    font-family: Georgia;
     font-size: 4em;
     margin-top: 1em;
     border-bottom: 1px solid #333;
