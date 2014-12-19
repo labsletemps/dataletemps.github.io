@@ -39,7 +39,9 @@
 
 &lt;h3 id='3me_tape_croiser_les_donnes_dans_un_tableur'&gt;3ème étape: croiser les données dans un tableur&lt;/h3&gt;
 
-&lt;p&gt;&lt;img alt='carte' src='/img/une3.png' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt; 3 Nous avons ensuite croisé ces deux ensembles de données dans un tableur, plus précisement Google Spreadsheet, un tableur en ligne. Nous avons utilisé des formules adéquates, notamment la fonction Vlookup (RechercheV en français), très puissante. Nous sommes ainsi allés chercher les informations concernant une personne dans la liste des conseils d’administration puis dans la liste des élus pour ne conserver au final que la liste des élus ayant un siège dans une société électrique. Puis, nous avons cherché manuellement le parti politique de chacun des élus pour lesquels cette information ne figurait pas sur nos listes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/une3.png' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nous avons ensuite croisé ces deux ensembles de données dans un tableur, plus précisement Google Spreadsheet, un tableur en ligne. Nous avons utilisé des formules adéquates, notamment la fonction Vlookup (RechercheV en français), très puissante. Nous sommes ainsi allés chercher les informations concernant une personne dans la liste des conseils d’administration puis dans la liste des élus pour ne conserver au final que la liste des élus ayant un siège dans une société électrique. Puis, nous avons cherché manuellement le parti politique de chacun des élus pour lesquels cette information ne figurait pas sur nos listes.&lt;/p&gt;
 
 &lt;h3 id='4me_tape_mettre_en_scne_les_donnes_pour_le_lecteur'&gt;4ème étape: mettre en scène les données pour le lecteur&lt;/h3&gt;
 &lt;br /&gt;
