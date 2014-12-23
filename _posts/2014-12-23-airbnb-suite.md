@@ -13,13 +13,13 @@ Au début du mois de novembre, nous avons publié avec Data Le Temps [une enquê
 
 En Suisse Romande, l'enquête a eu un certain impact, puisque le Grand Conseil de Genève a inscrit le sujet à l'ordre du jour. 
 
-Mais nous nous doutions pas que que cette enquête "data" allait être reprise par d’autres confrères en France, en Belgique et même au Canada. Nous sommes en tout cas ravis d’avoir initié, sans le vouloir, cette enquête collaborative francophone. 
+Mais nous nous doutions pas que que cette enquête "data" allait être reprise, répliquée, améliorée par d’autres médias en France, en Belgique et même au Canada. Nous sommes en tout cas ravis d’avoir initié, sans le vouloir, cette enquête collaborative francophone. 
 
-Sur le fond, tous ces sujets, déclinés bien entendu selon des angles locaux, montre finalement la même chose: Airbnb n'est plus ce site "cool" et utopique, fleuron de l'économie du partage: c'est finalement un site commercial comme un autre. 
+Sur le fond, tous ces sujets, déclinés bien entendu selon des angles locaux, montre finalement la même chose: Airbnb n'est plus ce site "cool" nourri d'utopie, fleuron de l'économie du partage: c'est finalement un site commercial comme un autre. 
 
-Sur la forme, nous sommes persuadé que cette façon de travailler en réseau est l'avenir de notre métier. Cela conforte notre envie de partager nos outils et nos méthodes de travail, pratique assez répandue dans le journalisme anglo-saxon. En espérant très vite pouvoir décliner sur la Suisse romande l'enquête lancée par un de nos confrères. 
+Sur la forme, nous sommes persuadés que cette façon de travailler en réseau est l'avenir de notre métier. Cela conforte notre envie de partager nos outils et nos méthodes de travail, pratique assez répandue dans le journalisme anglo-saxon. En espérant très vite pouvoir décliner sur la Suisse romande l'enquête lancée par l'un de nos confrères. 
 
-Voici un petit tour d'horizon de ce que nos confrères francophones ont déniché dans les données. 
+Voici un petit tour d'horizon de ce que nos confrères ont déniché dans les données. 
 
 ###En France
 
@@ -30,7 +30,7 @@ En France, c’est d’abord <b>un ancien rédacteur en chef du site Rue89</b>, 
 <br><br>
 Toujours en France, <b>le site d’informations locale Rue89 Strasbourg</b>, sous la plume de Florian Delafoi, [s’est intéressé à Airbnb dans la ville alsacienne](http://dansmonlabo.com/2014/11/24/airbnb-la-carte-des-prix-de-location-a-paris-et-ce-quon-y-apprend-415/). Comme nous l'avions trouvé à Genève, à Strasbourg, le journaliste montre comment les avatars qui laissent croire à première vue qu'il s'agit d'un particulier sont en fait utilisés par des entreprises commerciales classiques.
 
-Mais ce sont <b>nos confrères de Nice-Matin</b> [qui ont déniché dans les données le personnage le plus haut en couleur.](http://www.nicematin.com/nice/infographie-comment-airbnb-est-passe-dune-utopie-a-un-big-business-a-nice.2036490.html). A Genève, nous avions identifié Jasmina, une “baronne” d’Airbnb qui gérait 120 chambres  A Nice, le journaliste Damien Allemand a fait le portrait de Salvator, le meilleur "Airbnbiste" de la ville. Salvator a investi, au propre comme au figuré, dans le réseau. Sa petite entreprise - qui ne connaît pas la crise - emploie douze personnes: des femmes de chambres, des gouvernantes, des hommes à tout faire...  
+Mais c'est le quotidien régional Nice-Matin</b> [qui a déniché dans les données le personnage le plus haut en couleur.](http://www.nicematin.com/nice/infographie-comment-airbnb-est-passe-dune-utopie-a-un-big-business-a-nice.2036490.html). A Genève, nous avions identifié Jasmina, une “baronne” d’Airbnb qui gérait 120 chambres  A Nice, le journaliste Damien Allemand a fait le portrait de Salvator, le meilleur "Airbnbiste" de la ville. Salvator a investi, au propre comme au figuré, dans le réseau. Sa petite entreprise - qui ne connaît pas la crise - emploie douze personnes: des femmes de chambres, des gouvernantes, des hommes à tout faire...  
 
 ### En Belgique
 
