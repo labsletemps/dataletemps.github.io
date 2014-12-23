@@ -13,7 +13,7 @@ Au début du mois de novembre, nous avons publié avec Data Le Temps [une enquê
 
 En Suisse Romande, l'enquête a eu un certain impact, puisque le Grand Conseil de Genève a inscrit le sujet à l'ordre du jour. 
 
-Mais nous nous doutions pas que que cette enquête "data" allait être reprise, répliquée, améliorée par d’autres médias en France, en Belgique et même au Canada. Nous sommes en tout cas ravis d’avoir initié, sans le vouloir, cette enquête collaborative francophone. 
+Mais <b>nous nous doutions pas que que cette enquête "data" allait être reprise, répliquée, améliorée par d’autres médias en France, en Belgique et même au Canada</b>. Nous sommes en tout cas ravis d’avoir initié, sans le vouloir, cette enquête collaborative francophone. 
 
 Sur le fond, tous ces sujets, déclinés bien entendu selon des angles locaux, montre finalement la même chose: Airbnb n'est plus ce site "cool" nourri d'utopie, fleuron de l'économie du partage: c'est finalement un site commercial comme un autre. 
 
