@@ -48,7 +48,7 @@ Sarah Godard et Ettore Rizza  [ont mené l'enquête la plus ambitieuse en terme 
 
 ![carte](/img/bnb5.png)
 <br><br>
-Enfin, notre enquête a traversé l'Atlantique <b>chez Radio-Canada</b> (Florent Daudens et Pasquale Harrison-Julien) [qui s'est prêté à l'exercice](http://ici.radio-canada.ca/regions/montreal/2014/12/10/002-un-portrait-airbnb-locateurs-montreal-hebergement-legal-illegal.shtml), près de 5000 annonces là-aussi. La radio dresse un portrait-robot du marché, avec un prime un petit quiz. 
+Enfin, notre enquête a traversé l'Atlantique <b>chez Radio-Canada</b> (Florent Daudens et Pasquale Harrison-Julien) [qui s'est prêtée à l'exercice](http://ici.radio-canada.ca/regions/montreal/2014/12/10/002-un-portrait-airbnb-locateurs-montreal-hebergement-legal-illegal.shtml), près de 5000 annonces là-aussi. La radio dresse un portrait-robot du marché, avec un prime un petit quiz. 
 
 
 
