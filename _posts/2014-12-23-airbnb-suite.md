@@ -1,11 +1,9 @@
 ---
 layout: post_page
 title: Comment nous avons lancé une enquête collaborative (sans le vouloir)
-----
+---
 
 <meta property="og:title" content="Comment nous avons lancé une enquête collaborative (sans le vouloir)" />
-
-
 
 
 
