@@ -7,6 +7,39 @@
 		<atom:link href="http://dataletemps.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Comment nous avons lancé une enquête collaborative (sans le vouloir)</title>
+				<description>&lt;meta content='Comment nous avons lancé une enquête collaborative (sans le vouloir)' property='og:title' /&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/bnb2.png' /&gt; &lt;br /&gt;&lt;br /&gt; Au début du mois de novembre, nous avons publié avec Data Le Temps &lt;a href='http://t.co/a0KrfqBX6b'&gt;une enquête sur le marché Airbnb à Genève&lt;/a&gt; que nous avons accompagné &lt;a href='http://dataletemps.github.io/2014/11/09/airbnb.html'&gt;d’un making-of sur la méthodologie employée&lt;/a&gt;. Nous avions également mis en ligne notre script, le code informatique, qui nous avait servi à récupérer les données.&lt;/p&gt;
+
+&lt;p&gt;En Suisse Romande, l&amp;#8217;enquête a eu un impact, puisque le Grand conseil genévois a inscrit le sujet à l&amp;#8217;ordre du jour. Mais nous nous doutions pas que que cette enquête data allait être reprise par d’autres confrères en France, en Belgique et même au Canada.&lt;/p&gt;
+
+&lt;p&gt;Nous sommes en tout cas ravis d’avoir initié, sans le vouloir, cette enquête collaborative. Tous ces sujets adaptés aux angles locaux, montre finalement la même chose: Airbnb n&amp;#8217;est plus ce site &amp;#8220;cool&amp;#8221; et utopique, fleuron de l&amp;#8217;économie du partage, mais finalement un site commercial presque comme un autre.&lt;/p&gt;
+
+&lt;h3 id='en_france'&gt;En France&lt;/h3&gt;
+
+&lt;p&gt;En France, c’est d’abord &lt;b&gt;un ancien rédacteur en chef du site Rue89&lt;/b&gt;, Yann Guégan, qui a appliqué le mode d&amp;#8217;emploi à Paris, en récupérant un échantillon de 2000 annonces et les a mises en scène dans de très jolies cartes. &lt;a href='http://dansmonlabo.com/2014/11/24/airbnb-la-carte-des-prix-de-location-a-paris-et-ce-quon-y-apprend-415/'&gt;L’article qui accompagne ce travail&lt;/a&gt; permet d’avoir une vue d’ensemble du marché Airbnb parisien. L’auteur compare les prix Airbnb par arrondissement et ceux du marché immobilier locatif. Son travail permet d&amp;#8217;avoir une vue assez précise de l&amp;#8217;implantation Airbnb à Paris.&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/bnb4.png' /&gt; &lt;br /&gt;&lt;br /&gt; Toujours en France, &lt;b&gt;le site d’informations locale Rue89 Strasbourg&lt;/b&gt;, sous la plume de Florian Delafoi, &lt;a href='http://dansmonlabo.com/2014/11/24/airbnb-la-carte-des-prix-de-location-a-paris-et-ce-quon-y-apprend-415/'&gt;s’est intéressé au marché Airbnb dans la ville alsacienne&lt;/a&gt;. Comme nous l&amp;#8217;avions trouvé à Genève, à Strasbourg, le médi montre comment les avatars qui laissent croire à première vue qu&amp;#8217;il s&amp;#8217;agit d&amp;#8217;un particulier sont en fait utilisés par des entreprises commerciales classiques.&lt;/p&gt;
+
+&lt;p&gt;Mais ce sont nos confrères &lt;a href='http://www.nicematin.com/nice/infographie-comment-airbnb-est-passe-dune-utopie-a-un-big-business-a-nice.2036490.html'&gt;qui ont déniché dans les données le personnage le plus haut en couleur.&lt;/a&gt;. A Genève, nous avions identifié Jasmina, une “baronne” d’Airbnb avec environ 120 chambres sous sa gérance. A Nice, le journaliste Damien Allemand a rencontré Salvador, le meilleur &amp;#8220;Airbnbiste&amp;#8221; de la ville. Salvador a investi, au propre comme au figuré, dans le réseau. Sa petite entreprise - qui ne connaît pas la crise - emploie douze personnes, des femmes de chambres, des gouvernantes, des hommes à tout faire&amp;#8230;&lt;/p&gt;
+
+&lt;h3 id='en_belgique'&gt;En Belgique&lt;/h3&gt;
+
+&lt;p&gt;En Belgique, nos confrères sur Soir ont enquêté sur le marché belge sous la plume de Joël Matriche, suivi de l’Echo, un quotidien économique et financier.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt; &lt;img alt='carte' src='/img/bnb1.jpg' /&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sarah Godard et Ettore Rizza &lt;a href='http://www.lecho.be/detail.art?a=9576013&amp;amp;n=3011&amp;amp;ckc=1'&gt;ont mené l&amp;#8217;enquête la plus ambitieuse, sur toute la Belgique&lt;/a&gt;. Alors que nous avions travail avec 2000 annonces (ramenées à 1000 ensuite), l’Echo s’est basé sur plus de 5000 offres. Ettore Rizza, qui s’est occupé de cette partie &amp;#8220;scraping&amp;#8221; a du largement modifier et adapter notre méthode, notamment pour contourner une limitation mise en place par Airbnb.&lt;/p&gt;
+
+&lt;h3 id='au_canada'&gt;Au Canada&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/bnb5.png' /&gt; &lt;br /&gt;&lt;br /&gt; Enfin, notre enquête a traversé l&amp;#8217;Atlantique chez Radio-Canada (Florent Daudens et Pasquale Harrison-Julien) &lt;a href='http://ici.radio-canada.ca/regions/montreal/2014/12/10/002-un-portrait-airbnb-locateurs-montreal-hebergement-legal-illegal.shtml'&gt;qui s&amp;#8217;est prêté à l&amp;#8217;exercice&lt;/a&gt;, près de 5000 annonces la-aussi. La radio dresse un portrait-robot du marché, avec un prime un petit quiz.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Jean Abbiateci&lt;/strong&gt; (Data Le Temps)&lt;/p&gt;</description>
+				<pubDate>Tue, 23 Dec 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/12/23/airbnb-suite.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/12/23/airbnb-suite.html</guid>
+			</item>
+		
+			<item>
 				<title>Explorer les liens d'intérêts économiques des politiques en croisant les bases de données</title>
 				<description>&lt;meta content='Cartographier les lobbys en croisant les bases de données' property='og:title' /&gt;
 &lt;p&gt;&lt;img alt='carte' src='/img/oli2.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
@@ -137,9 +170,9 @@
 &lt;p&gt;Un mot important pour finir : ces données contiennent, comme nous l&amp;#8217;écrivions plus haut, les adresses précises de chaque résident. Nous les avons utilisées en interne pour notre enquête, de même que les dates de naissance. Mais nous avons choisi de ne jamais les publier.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://www.letemps.ch/interactive/2014/cologny/'&gt;Le résultat de cette enquête est à lire ici.&lt;/a&gt;&lt;/p&gt;</description>
-				<pubDate>Tue, 25 Nov 2014 00:00:00 +0100</pubDate>
-				<link>http://dataletemps.github.io/2014/11/25/cologny.html</link>
-				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/25/cologny.html</guid>
+				<pubDate>Sat, 15 Nov 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/11/15/cologny.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/15/cologny.html</guid>
 			</item>
 		
 			<item>
