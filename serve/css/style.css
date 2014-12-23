@@ -12,7 +12,9 @@ audio:not([controls]) {
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;
+
+    
 }
 a:focus {
     outline: thin dotted #333;3
@@ -78,11 +80,13 @@ textarea {
 }
 body {
     margin: 0;
-    font-family: Droid serif;
+    font-family: georgia;
     font-size: 15px;
     line-height: 20px;
     color: #333;
-    background-color: #fff
+    background-color: #fff;
+
+
 }
 a {
     color:#950728;
@@ -227,7 +231,7 @@ a:hover {
 }
 p {
     margin: 10px 0 10px;
-    font-size:16px;
+    font-size:17px;
     line-height: 1.8em;
     font-family:Georgia;
     color:#444;
@@ -1776,7 +1780,7 @@ main.container, main.content>.container {
     min-height: 58em
 }
 .content h1 {
-    font-family: Droid serif, "Times New Roman", Times, serif;
+    font-family: Georgia;
     font-size: 4em;
     margin-top: 1em;
     border-bottom: 1px solid #333;
@@ -1842,12 +1846,12 @@ main.container, main.content>.container {
     letter-spacing: 0.6em
 }
 .post h2 {
-    font-family: Droid serif, "Times New Roman", Times, serif;
+    font-family: Georgia;
     font-size: 2.9em;
 
     color:#333;
     padding: 1.5em 0 0.5em;
-    letter-spacing: 0.05em
+    letter-spacing: 0.0em
 }
 .post section {
     font-family: Droid serif;

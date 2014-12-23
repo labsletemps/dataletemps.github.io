@@ -9,9 +9,9 @@
 			<item>
 				<title>Explorer les liens d'intérêts économiques des politiques en croisant les bases de données</title>
 				<description>&lt;meta content='Cartographier les lobbys en croisant les bases de données' property='og:title' /&gt;
-&lt;p&gt;&lt;img alt='carte' src='/img/un2.png' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt='carte' src='/img/oli2.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Le Temps a publié lundi 15 décembre une enquête de Marie Parvex, réalisée avec l&amp;#8217;aide de Florent Evéquoz de &lt;a href='http://www.datastory.ch/'&gt;Datastory&lt;/a&gt;, intitulée&lt;b&gt; «Hydraulique, le dernier bastion du PDC»&lt;/b&gt;. Le dossier met en lumière la manière dont le PDC, le parti politique majoritaire dans le Valais, a la main mis sur la gouvernance politique des barrages et de l&amp;#8217;hydroélectricité, un secteur clé dans ce canton suisse. Cette enquête a été publiée dans le quotidien en version &amp;#8220;print&amp;#8221; mais aussi sur le site web, sous la forme d&amp;#8217;un format enrichi, à retrouver en cliquant sur le lien ci-dessous.&lt;/p&gt;
+&lt;p&gt;Le Temps a publié lundi 15 décembre une enquête de Marie Parvex, réalisée avec l&amp;#8217;aide de Florian Evéquoz de &lt;a href='http://www.datastory.ch/'&gt;Datastory&lt;/a&gt;, intitulée&lt;b&gt; «Hydraulique, le dernier bastion du PDC»&lt;/b&gt;. Le dossier met en lumière la manière dont le PDC, le parti politique majoritaire dans le Valais, a la main mis sur la gouvernance politique des barrages et de l&amp;#8217;hydroélectricité, un secteur clé dans ce canton suisse. Cette enquête a été publiée dans le quotidien en version &amp;#8220;print&amp;#8221; mais aussi sur le site web, sous la forme d&amp;#8217;un format enrichi, à retrouver en cliquant sur le lien ci-dessous.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://www.letemps.ch/interactive/2014/hydraulique/'&gt;&amp;#8614; Cliquez ici pour lire notre long format multimédia&lt;/a&gt; &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -19,15 +19,11 @@
 
 &lt;p&gt;La tâche a été en réalité beaucoup plus compliquée à effectuer, et une grande partie du travail sur les données - collecte et croisement - l&amp;#8217;a été à la main. Cela illustre assez bien la difficulté d&amp;#8217;accéder aux documents publics en Suisse, tout autant que de la complexité de travailler avec des bases de données différentes.&lt;/p&gt;
 
-&lt;p&gt;Voici le &lt;i&gt;making-of&lt;/i&gt; de cette enquête.&lt;/p&gt;
+&lt;p&gt;Voici le &lt;i&gt;making-of&lt;/i&gt; de cette enquête. &lt;br /&gt;&lt;br /&gt; &lt;img alt='carte' src='/img/un2.png' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h3 id='1er_tape_plucher_la_composition_des_conseils_dadministration'&gt;1er étape: éplucher la composition des conseils d&amp;#8217;administration&lt;/h3&gt;
 
-&lt;p&gt;&lt;img alt='carte' src='/img/oli2.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Nous avons commencé par chercher la liste de toutes les entreprises de production hydrauliques valaisannes. Personne ne possédant de liste exhaustive de ces dernières, nous nous sommes basés sur un document partiel fourni par l’Etat du Valais que nous avons complétée via le registre du commerce. Nous y avons choisi d&amp;#8217;intégrer certaines entreprises comme EnAlpin (maison-mère de nombreuses sociétés dans le Haut-Valais qui a son siège en Valais), Hydro-exploitation (une société qui fait de la maintenance et de l’exploitation pour les barrages). Mais aussi les 7 principaux distributeurs locaux d’électricité du canton qui en compte plus de 50: la stratégie d’une entreprise comme EnAlpin est liée à un réseau de distributeurs et ces sociétés offrent des sièges à de nombreux élus. La différence de structure politique de leurs conseils d’administration offrait un point de comparaison et une complémentarité à notre propos.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt='carte' src='/img/oli1.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Nous avons commencé par chercher la liste de toutes les entreprises de production hydrauliques valaisannes. Personne ne possédant de liste exhaustive de ces dernières, nous nous sommes basés sur un document partiel fourni par l’Etat du Valais que nous avons complétée via le registre du commerce. Nous y avons choisi d&amp;#8217;intégrer certaines entreprises comme EnAlpin (maison-mère de nombreuses sociétés dans le Haut-Valais qui a son siège en Valais), Hydro-exploitation (une société qui fait de la maintenance et de l’exploitation pour les barrages). Mais aussi les 7 principaux distributeurs locaux d’électricité du canton qui en compte plus de 50: la stratégie d’une entreprise comme EnAlpin est liée à un réseau de distributeurs et ces sociétés offrent des sièges à de nombreux élus. La différence de structure politique de leurs conseils d’administration offrait un point de comparaison et une complémentarité à notre propos. &lt;br /&gt;&lt;br /&gt; &lt;img alt='carte' src='/img/oli1.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nous avons ensuite extrait les informations sur ces sociétés via le registre du commerce (Zefix) en ligne sur internet, grâce à un outil développé par la société Datastory. Ce script permet d’extraire la liste des personnes dans la base de données de Zefix, dont les entrées sont structurées par date, et de les transformer dans un format plus flexible, un fichier CSV. Et donc plus facilement utilisable pour un journaliste dans un tableur comme Excel. . Dans cet exercice, les données du registre du commerce se sont révélées parfois incomplètes et donc à manier avec précaution. Certaines entreprises n’y font figurer que leur conseil d’administration, d’autres y inscrivent aussi des secrétaires ou des membres de leur direction. D’autres encore n’y inscrivent pas toujours les délégués de l’Etat du Valais qui siègent dans leur conseil. Nous avons pris le parti de conserver l’ensemble des noms, tels qu’ils figuraient au registre officiel. Jean-René Fournier, l&amp;#8217;un des personnages centraux de notre enquête, ne figure ainsi que dans l’une des deux entreprises dans lesquelles il a un siège.&lt;/p&gt;
 
@@ -47,7 +43,7 @@
 &lt;br /&gt;
 &lt;p&gt;&lt;img alt='carte' src='/img/une2.jpg' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Une fois cette base de données établie, la société Datastory l’a explorée grâce à des visualisations graphiques dans Excel et via des tableaux croisés dynamiques. Pour la mise en scène, nous avons encore tenté une visualisation sous forme de réseau pour exprimer ces liens d’intérêts. Cette dernière étant difficilement utilisable en raison du nombre important de personnes et donc de sa faible lisibilité pour le lecteur, nous avons opté pour une visualisation qui permette de rendre compte de la couleur et du poids politique des personnes concernées, ainsi que des sièges qu’elles occupent dans l’hydraulique. Pour la mise en forme, Datastory a utilisé, pour ses infographies, la librairie D3.js, très complète.&lt;/p&gt;
+&lt;p&gt;Une fois cette base de données établie, la société Datastory l’a explorée grâce à des visualisations graphiques dans Excel et via des tableaux croisés dynamiques. Pour la mise en scène, nous avons encore tenté une visualisation sous forme de réseau pour exprimer ces liens d’intérêts. Cette dernière étant difficilement utilisable en raison du nombre important de personnes et donc de sa faible lisibilité pour le lecteur, nous avons opté pour une visualisation qui permette de rendre compte de la couleur et du poids politique des personnes concernées, ainsi que des sièges qu’elles occupent dans l’hydraulique. Pour la mise en forme, Datastory a utilisé, pour ses infographies, la librairie D3.js, très complète.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='carte' src='/img/une4.png' /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -141,9 +137,9 @@
 &lt;p&gt;Un mot important pour finir : ces données contiennent, comme nous l&amp;#8217;écrivions plus haut, les adresses précises de chaque résident. Nous les avons utilisées en interne pour notre enquête, de même que les dates de naissance. Mais nous avons choisi de ne jamais les publier.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://www.letemps.ch/interactive/2014/cologny/'&gt;Le résultat de cette enquête est à lire ici.&lt;/a&gt;&lt;/p&gt;</description>
-				<pubDate>Sat, 15 Nov 2014 00:00:00 +0100</pubDate>
-				<link>http://dataletemps.github.io/2014/11/15/cologny.html</link>
-				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/15/cologny.html</guid>
+				<pubDate>Tue, 25 Nov 2014 00:00:00 +0100</pubDate>
+				<link>http://dataletemps.github.io/2014/11/25/cologny.html</link>
+				<guid isPermaLink="true">http://dataletemps.github.io/2014/11/25/cologny.html</guid>
 			</item>
 		
 			<item>
