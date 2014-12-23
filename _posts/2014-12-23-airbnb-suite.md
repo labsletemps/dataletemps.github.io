@@ -1,21 +1,9 @@
-
-<meta property="og:title" content="Datajournalisme. Comment nous avons lancé une enquête collaborative (sans le vouloir)" />
-    <meta property="og:title" content="Datajournalisme. Comment nous avons lancé une enquête collaborative (sans le vouloir)" />
-    <meta property="og:url" content="http://dataletemps.github.io/2014/12/23/airbnb-suite.html" />
-      <meta property="og:image" content="http://dataletemps.github.io/img/bnb1.jpg" />
-    <meta property="og:type" content="article" />
-
-
-<meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@letemps">
-    <meta name="twitter:image" content="http://dataletemps.github.io/img/bnb1.jpg" />
-
-
 ---
 layout: post_page
 title: Comment nous avons lancé une enquête collaborative (sans le vouloir)
----
+----
 
+<meta property="og:title" content="Comment nous avons lancé une enquête collaborative (sans le vouloir)" />
 
 
 
